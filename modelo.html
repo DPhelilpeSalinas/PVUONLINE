@@ -1,0 +1,202 @@
+<!doctype html>
+ <html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>PvsU-Online</title>
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body onload="carregar()">
+		<header>
+			<div id="linha-1"></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<h1><img src="imagens/imagem1.png"></h1>
+		</header>
+		<section>
+			<div id="menu1">
+				
+			<!-- cotações------------------------------------------------------------------------------>
+				<div id="cotacoes">
+					<div id="cot-tipo-0">
+						<br>
+						<p id="cot-t-01">Moeda</p><br>
+						<p id="cot-t-02">R$</p>
+					</div>
+					<div id="cot-caixa-1">
+						
+						<div id="cot-nome-1">
+							<p>BNB</p>
+						</div>
+						<div id="cot-input-1">
+							<input id="moeda-bnb" Type="text" name="txtano" size="10px"><br>
+							<input id="bnb-real" Type="text" name="txtano" size="10px">
+						</div>	
+					</div>	
+					<div id="cot-caixa-2">
+						<div id="cot-nome-2">
+							<p>PVU</p><br>
+						</div>	
+						<div id="cot-input-2">
+							<input id="moeda-pvu" Type="text" name="txtano" size="10px"><br>
+							<input id="pvu-real" Type="text" name="txtano" size="10px">
+						</div>	
+					</div>	
+					<div id="cot-caixa-3">
+						<div id="cot-nome-3">
+							<p>PVP</p><br>
+						</div>	
+						<div id="cot-input-3">
+							<input id="moeda-pvp" Type="text" name="txtano"size="10px"><br>
+							<input id="pvp-real" Type="text" name="txtano"size="10px">
+						</div>	
+					</div>	
+					<div id="cot-caixa-4">
+						<div id="cot-nome-4">
+							<p>DOLAR</p><br>
+						</div>
+						<div id="cot-input-4">
+							<input id="moeda-dolar" Type="text" name="txtano" size="10px"><br>
+							<input id="dolar-real" Type="text" name="txtano" size="10px">
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!-- adicionar planta mes------------------------------------------------------------------------------>
+			<div id="linha-2">
+				<div id="tabela-mes-1">
+					<div id="tab-m-le-1">
+						<div>
+							<p>Le</p>
+							<input id="le" Type="text" name="txtano" min="0" size="10px">
+						</div>
+						<div id="tab-m-le-2">
+							<p>/</p>
+							<p>/</p>
+						</div>
+					</div>
+					
+					<div id="tab-m-le-3">
+						<p>Hora</p>
+						<input id="hora" Type="text" name="txtano" min="0" size="10px">
+					</div>
+					<div id="tab-m-le-4">
+						<button id="tab-adic">Adicionar</button>
+					</div>
+				</div>
+			<!-- calculadora------------------------------------------------------------------------------>	
+				<!--https://www.w3schools.com/css/css_positioning.asp-->
+				<div id="calculadora-le-real">
+					<div id="calcb1">
+						<button id="calc" Type="text" name="txtano" min="0"size="30">Le</button>
+						<input id="le-real" Type="text" name="txtano" min="0"size="10"><br>
+					</div>
+					<div id="calc1">
+						<p>X</p><br>
+					</div>
+					<div id="calcb2">
+						<button id="calc" Type="text" name="txtano" min="0"size="30">Real</button>
+						<input id="real-le" Type="text" name="txtano" min="0"size="10">				
+					</div>
+				</div>
+			</div>
+			<!-- adicionar plantas padrao------------------------------------------------------------------------------>
+			<div id="tabela-mes-2">
+				<button id="adicionarbabymama" Type="text" name="txtano">mama</button>
+				<button id="adicionarbabymama" Type="text" name="txtano">Baby</button>
+			</div>
+			
+			<!-- tabela mes------------------------------------------------------------------------------>
+			<div id="tabela-mes">
+				<p>Mês</p>
+				<div id="titulomes">
+					<div id="p0">
+						<p id="p0-planta">Plantas</p><br>
+						<p id="p0-hora">Moeda/Hora</p><br>
+						<p id="p0-dia">Moeda/Dia</p><br>
+						<p id="p0-semana">Moeda/Semana</p><br>
+						<p id="p0-mes">Moeda/Mês</p><br>
+					</div>
+				</div>
+				<div id="dadosmes">
+					<div id="p1">
+						<p id="p1-planta">Planta 1</p>
+						<input id="p1-hora" Type="text" name="txtano" >
+						<input id="p1-dia" Type="text" name="txtano" >
+						<input id="p1-semana" Type="text" name="txtano" >
+						<input id="p1-mes" Type="text" name="txtano" >
+					</div>
+					<div id="p2">
+						<p id="p2-planta">Planta 2</p>
+						<input id="p2-hora" Type="text" name="txtano" >
+						<input id="p2-dia" Type="text" name="txtano" >
+						<input id="p2-semana" Type="text" name="txtano" >
+						<input id="p2-mes" Type="text" name="txtano" >
+					</div>
+					<div id="p3">
+						<p id="p3-planta">Planta 3</p>
+						<input id="p3-hora" Type="text" name="txtano" min="0" >
+						<input id="p3-dia" Type="text" name="txtano" min="0" >
+						<input id="p3-semana" Type="text" name="txtano" min="0" >
+						<input id="p3-mes" Type="text" name="txtano" min="0" >
+					</div>
+					<div id="p4">
+						<p id="p4-planta">Planta 4</p>
+						<input id="p4-hora" Type="text" name="txtano" min="0" >
+						<input id="p4-dia" Type="text" name="txtano" min="0" >
+						<input id="p4-semana" Type="text" name="txtano" min="0" >
+						<input id="p4-mes" Type="text" name="txtano" min="0" >
+					</div>
+					<div id="p5">
+						<p id="p5-planta">Planta 5</p>
+						<input id="p5-hora" Type="text" name="txtano" min="0" >
+						<input id="p5-dia" Type="text" name="txtano" min="0" >
+						<input id="p5-semana" Type="text" name="txtano" min="0" >
+						<input id="p5-mes" Type="text" name="txtano" min="0" >
+					</div>
+					<div id="p6">
+						<p id="p6-planta">Planta 6</p>
+						<input id="p6-hora" Type="text" name="txtano" min="0" >
+						<input id="p6-dia" Type="text" name="txtano" min="0" >
+						<input id="p6-semana" Type="text" name="txtano" min="0" >
+						<input id="p6-mes" Type="text" name="txtano" min="0" >
+					</div>
+					<div id="p7">
+						<input id="p-total" Type="text" name="txtano" min="0" >
+						<input id="hora-total" Type="text" name="txtano" min="0" >
+						<input id="dia-total" Type="text" name="txtano" min="0" >
+						<input id="semana-total" Type="text" name="txtano" min="0" >
+						<input id="mes-total" Type="text" name="txtano" min="0" >
+					</div>
+				</div>
+				<button id="limpar-mes" Type="button" name="txtano" >Limpar dados</button>
+			</div>
+
+			<!--
+			<p>Sexo:
+				<input Type="radio" name="radsex" id="mas" checked>
+				<label for="mas">Masculino</label>
+				<input Type="radio" name="radsex" id="fem" checked>
+				<label for="fem">Feminino</label>
+			</p>
+			<p>
+				<input Type="button" value="Verificar" onclick="verificar">
+			</p>
+	
+			<div>
+				Aqui vai aparecer a mensagem...
+			</div id="res">
+				Preencha os dados acima para ver o resultado!
+			</div>-->
+		</section>
+
+		<footer>
+			<p>&copy; PhS.Soluções</p>
+		</footer>
+		</body>
+		<script src="script.js">
+		</script>
+	
+ </html>

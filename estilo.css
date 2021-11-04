@@ -1,0 +1,309 @@
+*{
+	padding: 0;
+	margin: 0;
+	}
+body {/*corpo do site*/
+	margin: 10px;
+	background:black;
+	font: normal 15pt Arial;
+	}
+header {/*cabeçhalho*/
+ 	color:white;
+	text-align:center;
+	}
+section {/*corpo do site 1*/
+	background:black;
+	border-radius:10px;	
+	padding:15px;
+	width:900px;
+	margin:auto;
+	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.363);
+	}
+/*----------------------tabela cotaçoes------------------------*/
+	#menu1{/*contem as cotações*/
+		/*background: blue;*/
+		text-align: center;
+		width:auto;
+		color: white;
+		height:60px;
+		}
+		#cotacoes{/* */
+			/*background: red;*/
+			width: 80%;
+			height:auto;
+			column-count: 5;/*quantidade de colunas*/
+		    color:white;
+	 		}
+			#cot-tipo-0{/*divisao caixas de texto*/
+				margin: 0px 0px 0px 80px; /*---distancia ----*/
+				height:50px;
+				/*background: yellow;*/
+				}
+			#cot-t-01{
+				height: 0px;
+				color: white;
+				text-align: left;
+				}
+			#cot-t-02{
+				height: 0px;
+				color: white;
+				text-align: left;
+				}
+	/*----------------------------1-------------------------*/
+		#cot-caixa-1{/*divisao caixas de texto*/
+			height:70px;
+			text-align: center;
+			/*background: grey;*/
+		 	}
+		 #cot-nome-1{/*divisao caixas de texto*/
+			height:20px;
+			text-align: center;
+			/*background: green;*/
+		 	}
+		 #cot-input-1:focus{/*divisao caixas de texto*/
+		 	border:3px solid #555;
+			width:20px;
+			text-align: center;	
+			/*background: blue;*/
+	 		}
+ 	/*---------------------------2--------------------------*/
+		#cot-caixa-2{/*divisao caixas de texto*/
+			height:70px;
+			text-align: center;
+			/*background: grey;*/
+		 	}
+		 #cot-nome-2{/*divisao caixas de texto*/
+			height:20px;
+			text-align: center;
+			/*background: green;*/
+		 	}
+		 #cot-input-2:focus{/*divisao caixas de texto*/
+		 	border:3px solid #555;
+			width:20px;
+			text-align: center;	
+			/*background: grey;*/
+	 		}
+ 	/*-----------------------3------------------------------*/
+		#cot-caixa-3{/*divisao caixas de texto*/
+				height:70px;
+				text-align: center;
+				/*background: grey;*/
+				}
+			#cot-nome-3{/*divisao caixas de texto*/
+			height:20px;
+			text-align: center;
+			/*background: green;*/
+			}
+			#cot-input-3:focus{/*divisao caixas de texto*/
+				border:3px solid #555;
+			width:20px;
+			text-align: center;	
+			/*background: grey;*/
+				}
+ 	/*------------------------4-----------------------------*/
+		#cot-caixa-4{/*divisao caixas de texto*/
+			height:70px;
+			text-align: center;
+			/*background: grey;*/
+		 	}
+		 #cot-nome-4{/*divisao caixas de texto*/
+			height:20px;
+			text-align: center;
+			/*background: green;*/
+		
+		 	}
+		 #cot-input-4:focus{/*divisao caixas de texto*/
+		 	border:3px solid #555;
+			width:20px;
+			text-align: center;	
+			/*background: grey;*/
+	 		}
+ 		
+/*----------------------tabela calculadora-------------------------*/
+	#tabela-mes-1{/*tabela mes 1*/
+		float: left;
+		margin: 10px;
+		color: white;
+		/*background: blue;*/
+		width: 320px;
+		column-count:3;
+		padding: 100px 90px 0px 0px; /*----para baixo e para o lado--tabela adicionar com tabela calc----*/
+		}
+		#tab-m-le-1{/*caixa texto moeda*/
+		text-align: center;
+		/*background: red;*/
+		float: left;
+		width: 115%;
+		column-count: 2;
+
+		}
+		#tab-m-le-2{/*divisao caixas de texto*/
+		text-align: center;
+		float: right;
+		width: 5%;
+		/*background: green;*/
+		}
+		#tab-m-le-3{/*caixa de texto hora*/
+		text-align: center;
+		/*background: yellow;*/
+		}
+		#tab-m-le-4{ /*botao adicionar*/
+		text-align: center;
+		/*background: red;*/
+		}
+		#tab-adic{
+			width: 80px;
+		}
+		#tab-adic:hover{/*cor ao clicar botao adicionar*/
+			transition-duration: 0.4s;
+			background-color:yellow;
+		}
+/*----------------------tabela calculadora-------------------------*/
+	#calculadora-le-real{/*conjunto botoes calculadora*/
+		float: left;
+		margin: 10px;
+		padding: 30px 0px 80px 0px; 
+		width: 150px;
+		/*background: red;*/
+		}
+	#calc{
+		width: 40px;  /*botoes*/
+		
+	}
+	#calc1{  /*texto entre botoes */
+		color:white;
+		text-align: center;
+		/*background: green;*/
+		height: 20px;
+	}
+		#calc:hover{/*cor ao clicar botao*/
+			transition-duration: 0.4s;
+			background-color:yellow;
+		}
+	#calcb1{/*caixa de texto e botao*/
+		/*background: blue;*/
+	}
+	#calcb2{/*caixa de texto e botao*/
+		/*background: yellow;*/
+	}
+	#tabela-mes-2{
+		clear:both;
+		/*background: blue;*/
+		text-align: left;
+	}
+/*----------------------tabela botoes adicionar-------------------------*/
+		#adicionarbabymama{
+			text-align: center;
+			width: 200px;  /*botoes*/
+			height:50px;
+			}
+			#adicionarbabymama:hover{
+			transition-duration: 0.4s;
+			background-color:yellow;
+		}
+/*----------------------tabela mes-------------------------*/
+	#tabela-mes{
+		margin: 10px 0px 0px 0px;
+		/*background: blue;*/
+		width:800px;
+		color: white;
+		text-align: center;
+			}
+			#titulomes{
+			/*	background: pink;*/
+				float: left;
+				width:150px;
+				text-align: left;
+				}
+			#dadosmes{
+				margin: 0px 20px 0px 0px;
+				float: right;
+			/*	background: pink;*/
+				columns: 7;
+				width:630px;
+			}
+			#p0{
+				/*background: grey;*/
+			}
+				#p0-planta{height: 1px;}
+				#p0-hora{height: 1px;}
+				#p0-dia{height: 1px;}
+				#p0-semana{height: 1px;}
+				#p0-mes{height: 1px;}
+			#p1{
+
+				width: 85px;
+				/*background: red;*/
+			}
+				#p1-planta{width: 80px;}
+				#p1-hora{width: 80px;}
+				#p1-dia{width: 80px;}
+				#p1-semana{width: 80px;}
+				#p1-mes{width: 80px;}
+			#p2{
+				width: 85px;
+				/*background: yellow;*/
+			}
+				#p2-planta{width: 80px;}
+				#p2-hora{width: 80px;}
+				#p2-dia{width: 80px;}
+				#p2-semana{width: 80px;}
+				#p2-mes{width: 80px;}
+			#p3{
+				width: 85px;
+				/*background: green;*/
+			}
+				#p3-planta{width: 80px;}
+				#p3-hora{width: 80px;}
+				#p3-dia{width: 80px;}
+				#p3-semana{width: 80px;}
+				#p3-mes{width: 80px;}		
+			#p4{
+				width: 85px;
+				/*background:grey ;*/
+			}
+				#p4-planta{width: 80px;}
+				#p4-hora{width: 80px;}
+				#p4-dia{width: 80px;}
+				#p4-semana{width: 80px;}
+				#p4-mes{width: 80px;}
+			#p5{
+				width: 85px;
+				/*background: brown;*/
+			}
+				#p5-planta{width: 80px;}
+				#p5-hora{width: 80px;}
+				#p5-dia{width: 80px;}
+				#p5-semana{width: 80px;}
+				#p5-mes{width: 80px;}
+			#p6{
+				width: 85px;
+				/*background: rgb(255, 196, 0);*/
+			}
+				#p6-planta{width: 80px;}
+				#p6-hora{width: 80px;}
+				#p6-dia{width: 80px;}
+				#p6-semana{width: 80px;}
+				#p6-mes{width: 80px;}
+			#p7{
+				width: 85px;
+				/*background: rgb(81, 0, 255);*/
+			}
+				#p-total{width: 80px;}
+				#hora-total{width: 80px;}
+				#dia-total{width: 80px;}
+				#semana-total{width: 80px;}
+				#mes-total{width: 80px;}
+			#limpar-mes{width: 800px;}
+				#limpar-mes:hover{
+				transition-duration: 0.4s;
+				background-color:yellow;	
+		}
+/*----------------------footer-----------------------conferido--*/
+		#footer{
+		width:300px;
+		clear: both;
+ 		color:white;
+		text-align:center;
+		background: blue;
+		} 
