@@ -29,14 +29,56 @@ function horamoeda() {
     message2.innerHTML = '1,00' +  */
     /*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
 function horamoeda() {
-    var num6 = document.querySelector("#p6-p-hora").value;
-    var num5 = document.querySelector("#p5-p-hora").value;
+    var mes= 30
+    var dia = 24
+    var semana = 7
+    var phora1 = document.querySelector("#p1-p-hora").value;
+    var pmoeda1 = document.querySelector("#p1-p-moeda").value;
+    var custop1 = document.querySelector("#p1-p-custo").value 
+    var q1 = document.querySelector("#p1-p-qt").value 
+    /*var pmoedadia = document.querySelector("#p1-hora").value;/*dia*/
+    /*var pmoedasemana = document.querySelector("#p1-dia").value;/*semana*/
+    /*var pmoedames = document.querySelector("#p1-dia").value;/*mes*/
+    /*var num6 = document.querySelector("#p6-p-hora").value;*/
+    
    
-    var resultado = 
+    var resultadohora = parseInt(pmoeda1) / parseInt(phora1) 
+        const horamoeda1 = resultadohora.toPrecision(3).replace(".", ",")
+        
+        var dia1 = document.querySelector("#p1-mes").value
+        
+        var resultadosemana = document.querySelector("#p1-dia").value
+        var resultadosemana1 = parseInt(resultadosemana) * parseInt(semana)
+        
+        
+        var demorap = document.querySelector("#p1-p-hora").value;
+        var despdemo1 =  parseInt(demorap) / parseInt(dia)       
+        var despdemo1total = despdemo1
+        document.querySelector("#p1-troca").value = despdemo1total
+        var mes = document.querySelector("#p1-mes").value = (((horamoeda1.replace(",", ".") *dia)*mes)*q1)- (custop1*despdemo1total)/*hora mes*/
+        document.querySelector("#p1-hora").value = /*hora dia*/
+        document.querySelector("#p1-semana").value =  resultadosemana1/*hora semana*/
+     
+   }
+
+/*function horahora(){
+      const diadia = 1
+    var resultado2 = (parseInt(pmoedadia.replace(",", ".")) )
+     document.querySelector("#p1-dia").value = resultado2.toFixed(2)
+    
+    var resultado3 = 
+      parseInt(pmoedas1) * 7
+      document.querySelector("#p1-semana").value = resultado3;
+    var resultado4 = 
+      parseInt(pmoedam1) * 30
+      document.querySelector("#p1-mes").value = resultado4;}
+     /* var resultado2 =
+      parseInt(num3) 
+      parseInt(num4) +
       parseInt(num5) +
       parseInt(num6)
-    document.querySelector("#p5-hora").value = resultado;
-}
+    
+}*/
 /*
 function horamoeda2() {
   const message = document.getElementById("erromes")

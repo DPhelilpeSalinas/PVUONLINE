@@ -232,91 +232,115 @@ footer{
 			#p0{
 				/*background: grey;*/
 			}
+				#p0-p-qt{height: 1px;}
 				#p0-p-hora{height: 1px;}
 				#p0-p-moeda{height: 1px;}
+				#p0-p-custo{height: 1px;}
 				#p0-planta{height: 1px;}
 				#p0-hora{height: 1px;}
 				#p0-dia{height: 1px;}
 				#p0-semana{height: 1px;}
 				#p0-mes{height: 1px;}
+				#p0-trocas{height: 1px;}
 			#p1{
 
 				width: 85px;
 				/*background: red;*/
 			}
+				#p1-p-qt{width: 80px;}
 				#p1-planta{width: 80px;}
 				#p1-p-hora{width: 80px;}
 				#p1-p-moeda{width: 80px;}
+				#p1-p-custo{width: 80px;}
 				#p1-hora{width: 80px;}
 				#p1-dia{width: 80px;}
 				#p1-semana{width: 80px;}
 				#p1-mes{width: 80px;}
+				#p1-troca{width: 80px;}
 			#p2{
 				width: 85px;
 				/*background: yellow;*/
 			}
+				#p2-p-qt{width: 80px;}
 				#p2-planta{width: 80px;}
 				#p2-p-hora{width: 80px;}
 				#p2-p-moeda{width: 80px;}
+				#p2-p-custo{width: 80px;}
 				#p2-hora{width: 80px;}
 				#p2-dia{width: 80px;}
 				#p2-semana{width: 80px;}
 				#p2-mes{width: 80px;}
+				#p2-troca{width: 80px;}
 			#p3{
 				width: 85px;
 				/*background: green;*/
 			}
+				#p3-p-qt{width: 80px;}
 				#p3-planta{width: 80px;}
 				#p3-p-hora{width: 80px;}
 				#p3-p-moeda{width: 80px;}
+				#p3-p-custo{width: 80px;}
 				#p3-hora{width: 80px;}
 				#p3-dia{width: 80px;}
 				#p3-semana{width: 80px;}
-				#p3-mes{width: 80px;}		
+				#p3-mes{width: 80px;}	
+					#p3-troca{width: 80px;}	
 			#p4{
 				width: 85px;
 				/*background:grey ;*/
 			}
+				#p4-p-qt{width: 80px;}
 				#p4-planta{width: 80px;}
 				#p4-p-hora{width: 80px;}
 				#p4-p-moeda{width: 80px;}
+				#p4-p-custo{width: 80px;}
 				#p4-hora{width: 80px;}
 				#p4-dia{width: 80px;}
 				#p4-semana{width: 80px;}
 				#p4-mes{width: 80px;}
+				#p4-troca{width: 80px;}
 			#p5{
 				width: 85px;
 				/*background: brown;*/
 			}
+				#p5-p-qt{width: 80px;}
 				#p5-planta{width: 80px;}
 				#p5-p-hora{width: 80px;}
 				#p5-p-moeda{width: 80px;}
+				#p5-p-custo{width: 80px;}
 				#p5-hora{width: 80px;}
 				#p5-dia{width: 80px;}
 				#p5-semana{width: 80px;}
 				#p5-mes{width: 80px;}
+				#p5-troca{width: 80px;}
 			#p6{
 				width: 85px;
 				/*background: rgb(255, 196, 0);*/
 			}
+				#p6-p-qt{width: 80px;}
 				#p6-planta{width: 80px;}
 				#p6-p-hora{width: 80px;}
 				#p6-p-moeda{width: 80px;}
+				#p6-p-custo{width: 80px;}
 				#p6-hora{width: 80px;}
 				#p6-dia{width: 80px;}
 				#p6-semana{width: 80px;}
 				#p6-mes{width: 80px;}
+				#p6-troca{width: 80px;}
 			#p7{
 				width: 85px;
 				/*background: rgb(81, 0, 255);*/
 			}
+				#p-qt-total{width: 80px;}
 				#p-total{width: 80px;}
 				#p-h-total{width: 80px;}
 				#p-m-total{width: 80px;}
+				#p-c-total{width: 80px;}
 				#hora-total{width: 80px;}
 				#dia-total{width: 80px;}
 				#semana-total{width: 80px;}
 				#mes-total{width: 80px;}
+				#troca-total{width: 80px;}
 			#calcularmes{width: 800px;}
 				#limpar-mes:hover{
 				transition-duration: 0.4s;
