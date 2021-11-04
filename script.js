@@ -1,5 +1,6 @@
+/*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
+/*
 function horamoeda() {
-  document.getElementById('p3-hora').value= p1phora + p1pmoeda
   const message = document.getElementById("erromes")
   message.innerHTML = ""
   const message1 = document.getElementById("erromes")
@@ -25,11 +26,17 @@ function horamoeda() {
   catch(err) {
     message.innerHTML = "Corriga o erro: " + err
     message1.innerHTML = "Corriga o erro: " + err
-    message2.innerHTML = '1,00'
-
-    
-  }
-}document.getElementById('p2-hora').value='1,00'
+    message2.innerHTML = '1,00' +  */
+    /*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
+function horamoeda() {
+    var num6 = document.querySelector("#p6-p-hora").value;
+    var num5 = document.querySelector("#p5-p-hora").value;
+   
+    var resultado = 
+      parseInt(num5) +
+      parseInt(num6)
+    document.querySelector("#p5-hora").value = resultado;
+}
 /*
 function horamoeda2() {
   const message = document.getElementById("erromes")
