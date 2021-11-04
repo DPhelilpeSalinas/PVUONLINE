@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>introdução ao JavaScript</h1>
+
+<p>vamos fazer juntos</p>
+
+<p>aperte no seu teclado Ctrl + u para poder visualizar o codigo fonte e teste voce mesmo</p>
+
+<h2>What Can JavaScript Do?</h2><br>
+
+<p>JavaScript can show hidden HTML elements.</p><br>
+
+
+
+
+<input id="demonstrativo-0" type="text"style="display:none;color:blue"value="1,00" ><br>
+<button type="button" onclick="document.getElementById('demonstrativo-0').style.display='block'">
+	fazer uma caixa de texto/ voltar caixa de texto
+</button><br>
+
+<button type="button" onclick="document.getElementById('demonstrativo-0').style.display='none'">
+	sumir caixa de texto
+</button><br>
+
+<button type="button" onclick="document.getElementById('demonstrativo-0').type='number'">
+	passar caixa de texto para numero
+</button><br>
+
+<button type="button" onclick="document.getElementById('demonstrativo-0').type='text'">
+voltar caixa de texto para texto
+</button><br>
+
+<button type="button" onclick="document.getElementById('demonstrativo-0').value=''">
+	apagar
+</button><br>
+
+<button type="button" onclick="document.getElementById('demonstrativo-0').value='1,00'">
+	escrever "1,00"
+</button><br>
+
+<button type="button" onclick="document.getElementById('demonstrativo-0').style.color='red'"style="background: red;color: white">
+	mudar cor para vermelho
+</button><br>
+<button type="button" onclick="document.getElementById('demonstrativo-0').style.color='black'"style="background: black;color: white">
+	mudar cor para preto
+</button><br>
+<button type="button" onclick="document.getElementById('demonstrativo-0').style.color='blue'"style="background: blue;color: white">
+	mudar cor para blue
+</button><br>
+<br><p>-------------------------------------------------------------------------------<p>
+topico 2
+
+	<p id="demonstrativo-1">Olá Mundo</p><br>
+para inserir ou alterar um paragrafo ou uma escrita ao clique de um botao<br>
+<button type="button" onclick="myFunction()">Try it</button><br>
+<br>
+vejamos o mesmo exempolo como acima, mas agora vamos aprender a fazer atravez de funções ou sejá, fazer da mesma coisa mas de uma forma diferente.<br>
+como passar as funcionalidades do topico 1 para o topico 2 de uma forma mais organizada, porem simples de se ver e entender.<br>
+
+perceba que para dar certo devemos trocar a ' aspas simples pela dupla.<br>
+ex.:
+document.getElementById('demonstrativo-2').style.display='none' sem alterações<br>
+nao roda
+document.getElementById("demonstrativo-2").style.display="none" com alterações funciona corretamente<br>
+
+<input id="demonstrativo-2" type="text"style="display:none;color:blue"value="1,00" >Hello JavaScript!</p><br>
+
+
+<button type="button" onclick="myFunction1()">voltar caixa de texto</button><br>
+
+<button type="button" onclick="myFunction2()">sumir caixa de texto</button><br>
+
+<button type="button" onclick="myFunction3()">passar caixa de texto para numero</button><br>
+
+<button type="button" onclick="myFunction4()">voltar caixa de texto para texto</button><br>
+
+<button type="button" onclick="myFunction5()">apagar</button><br>
+
+<button type="button" onclick="myFunction6()">escrever "1,00"</button><br>
+
+<button type="button" onclick=" myFunction7()" style="background: red;color: white">mudar cor para vermelho</button><br>
+
+<button type="button" onclick="myFunction8()"style="background: black;color: white">	mudar cor para preto</button><br>
+
+<button type="button" onclick="myFunction9()"style="background: blue;color: white">	mudar cor para blue</button><br>
+<p>metodos de saida no JavaScript</p><br>
+
+vamos a proxima pagina
+<button type="button" url="teste exemplos pagina 2.html">	mudar cor para blue</button><br>
+<p>metodos de saida no JavaScript</p><br>
+<script>
+function myFunction() {
+  document.getElementById("demonstrativo-1").innerHTML = "Paragraph changed.";
+}
+function myFunction1(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').style.display='block'
+}
+function myFunction2(){/*sumir caixa de texto*/
+  document.getElementById('demonstrativo-2').style.display='none'/**/
+}
+function myFunction3(){/*voltar caixa*/
+ document.getElementById('demonstrativo-2').type='number'
+}
+function myFunction4(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').type='text'
+}
+function myFunction5(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').value=''
+}
+function myFunction6(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').value='1,00'
+}
+function myFunction7(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').style.color='red'
+}
+function myFunction8(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').style.color='black'
+}
+function myFunction9(){/*voltar caixa*/
+  document.getElementById('demonstrativo-2').style.color='blue'
+}function myFunction10(){/*voltar caixa*/
+  /*negrito*/
+}
+function myFunction11(){/*voltar caixa*/
+  /*italico*/
+}
+function myFunction12(){/*voltar caixa*/
+  /*sublinhado*/
+}
+function myFunction13(){/*voltar caixa*/
+  /*sobscrito*/
+}
+function myFunction14(){/*voltar caixa*/
+  /*subscrito*/
+}
+</script>
+</body>
+</html> 
