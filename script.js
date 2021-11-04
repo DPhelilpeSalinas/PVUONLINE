@@ -1,23 +1,36 @@
 function horamoeda() {
+  document.getElementById('p3-hora').value= p1phora + p1pmoeda
   const message = document.getElementById("erromes")
   message.innerHTML = ""
+  const message1 = document.getElementById("erromes")
+  message1.innerHTML = ""
+  const message2 = document.getElementById("p1-hora")
+  message2.innerHTML = ""
+  
   let p1phora = document.getElementById("p1-p-hora").value
+  let p1pmoeda = document.getElementById("p1-p-moeda").value
+  let p1hora = p1
   try {
-    if(p1phora == "") throw "digite quantas horas a planta leva para crescer!"
-		
-    if(isNaN(p1phora)) throw "não é um Número, a tabela só aceita números!"
     
+		
+    if(isNaN(p1phora)) throw "não é um Número, a tabela só aceita números!( Hora Planta 1)"
+    if(isNaN(p1pmoeda)) throw "não é um Número, a tabela só aceita números!( moeda Planta 1)"
     p1phora = Number(p1phora)
-    if(p1phora < 24) throw "valor muito baixo no campo ( Hora Planta 1)"
+    p1pmoeda = Number(p1pmoeda)
+    if(p1phora >=1 && p1phora <= 24) throw "valor muito baixo no campo ( Hora Planta 1)"
     
     if(p1phora > 720) throw "valor muito alto no campo ( Hora Planta 1)"
     
   }
   catch(err) {
     message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p1-p-hora").value=""
+    message1.innerHTML = "Corriga o erro: " + err
+    message2.innerHTML = '1,00'
+
+    
   }
-}
+}document.getElementById('p2-hora').value='1,00'
+/*
 function horamoeda2() {
   const message = document.getElementById("erromes")
   message.innerHTML = ""
@@ -118,9 +131,9 @@ function horamoeda6() {
     message.innerHTML = "Corriga o erro: " + err
     document.getElementById("p2-p-hora").value=""
     document.getElementById("p2-p-hora").value=""
-  }
+  }*/
 /**********************************************************************************************************/
-function horamoeda() {
+/*function horamoeda() {
   const message = document.getElementById("erromes")
   message.innerHTML = ""
   let p1phora = document.getElementById("p1-p-hora").value
@@ -240,4 +253,4 @@ function horamoeda6() {
     message.innerHTML = "Corriga o erro: " + err
     document.getElementById("p2-p-hora").value=""
     document.getElementById("p2-p-hora").value=""
-  }
+  }*/
