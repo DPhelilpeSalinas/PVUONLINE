@@ -19,6 +19,13 @@ section {/*corpo do site 1*/
 	margin:auto;
 	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.363);
 	}
+footer{
+	
+	clear: both;
+	color:white;
+	text-align:center;
+	background: black;
+	} 
 /*----------------------tabela cotaçoes------------------------*/
 	#menu1{/*contem as cotações*/
 		/*background: blue;*/
@@ -300,10 +307,4 @@ section {/*corpo do site 1*/
 				background-color:yellow;	
 		}
 /*----------------------footer-----------------------conferido--*/
-		#footer{
-		width:300px;
-		clear: both;
- 		color:white;
-		text-align:center;
-		background: blue;
-		} 
+	
