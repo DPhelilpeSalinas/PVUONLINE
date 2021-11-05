@@ -48,7 +48,8 @@ function horamoeda() {
         var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)720horas
         var resmesbruto = parseInt(q1) * parseInt(resmesmes)//((72/250)*24)*30)*("qantidade de planta")
         var totmesplant = parseInt(meshora) / parseInt()//hora polanta/30hplanta por mes
-        var resmesmescusto = parseInt(totmesplant) * parseInt(phora1)//trocas planta no mes
+        var restrocaplantames = parseInt(totmesplant) * parseInt(phora1)//trocas planta no mes
+        var rescustobrutomes = parseInt(resmes) - parseInt(rescustobrutomes) //((72/250)720horas - (custo*troca)
 
 
     
