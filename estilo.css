@@ -225,23 +225,24 @@ footer{
 			#dadosmes{
 				margin: 0px 20px 0px 0px;
 				float: right;
-			/*	background: pink;*/
+				/*background: pink;*/
 				columns: 7;
 				width:630px;
+				height:250px;
 			}
 			#p0{
 				/*background: grey;*/
 			}
-				#p0-p-qt{height: 1px;}
-				#p0-p-hora{height: 1px;}
-				#p0-p-moeda{height: 1px;}
-				#p0-p-custo{height: 1px;}
-				#p0-planta{height: 1px;}
-				#p0-hora{height: 1px;}
-				#p0-dia{height: 1px;}
-				#p0-semana{height: 1px;}
-				#p0-mes{height: 1px;}
-				#p0-trocas{height: 1px;}
+				#p0-p-qt{height: 0.99px;}
+				#p0-p-hora{height: 0.99px;}
+				#p0-p-moeda{height: 0.99px;}
+				#p0-p-custo{height: 0.99px;}
+				#p0-planta{height: 0.99px;}
+				#p0-hora{height: 0.99px;}
+				#p0-dia{height: 0.99px;}
+				#p0-semana{height: 0.99px;}
+				#p0-mes{height: 0.99px;}
+				#p0-trocas{height: 0.99px;}
 			#p1{
 
 				width: 85px;
@@ -315,7 +316,8 @@ footer{
 				#p5-troca{width: 80px;}
 			#p6{
 				width: 85px;
-				/*background: rgb(255, 196, 0);*/
+				/*height:25px;*/
+			/*background: rgb(255, 196, 0);*/
 			}
 				#p6-p-qt{width: 80px;}
 				#p6-planta{width: 80px;}
@@ -329,6 +331,7 @@ footer{
 				#p6-troca{width: 80px;}
 			#p7{
 				width: 85px;
+				/*height:25px;*/
 				/*background: rgb(81, 0, 255);*/
 			}
 				#p-qt-total{width: 80px;}
@@ -342,9 +345,10 @@ footer{
 				#mes-total{width: 80px;}
 				#troca-total{width: 80px;}
 			#calcularmes{width: 800px;}
-				#limpar-mes:hover{
+				#calcularmes:hover{
 				transition-duration: 0.4s;
-				background-color:yellow;	
+				background-color:yellow;
+				height: 30px;
 		}
 			#limpar-mes{width: 800px;}
 				#limpar-mes:hover{

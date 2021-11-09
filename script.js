@@ -1,73 +1,79 @@
 /*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
-/*
-function horamoeda() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  const message1 = document.getElementById("erromes")
-  message1.innerHTML = ""
-  const message2 = document.getElementById("p1-hora")
-  message2.innerHTML = ""
-  
-  let p1phora = document.getElementById("p1-p-hora").value
-  let p1pmoeda = document.getElementById("p1-p-moeda").value
-  let p1hora = p1
-  try {
-    
-		
-    if(isNaN(p1phora)) throw "não é um Número, a tabela só aceita números!( Hora Planta 1)"
-    if(isNaN(p1pmoeda)) throw "não é um Número, a tabela só aceita números!( moeda Planta 1)"
-    p1phora = Number(p1phora)
-    p1pmoeda = Number(p1pmoeda)
-    if(p1phora >=1 && p1phora <= 24) throw "valor muito baixo no campo ( Hora Planta 1)"
-    
-    if(p1phora > 720) throw "valor muito alto no campo ( Hora Planta 1)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    message1.innerHTML = "Corriga o erro: " + err
-    message2.innerHTML = '1,00' +  */
-    /*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
+//https://www.w3schools.com/css/css_positioning.asp
+
+
 function horamoeda() {
     var diahora = 24
     var semanadia = 7
     var mesdia = 30
     var meshora = 720
-    var phora1 = document.querySelector("#p1-p-hora").value;
-    var pmoeda1 = document.querySelector("#p1-p-moeda").value;
+    var i = document.querySelector("#p2-p-hora").value
+    var phora1 = document.querySelector("#p1-p-hora").value
+    var pmoeda1 = document.querySelector("#p1-p-moeda").value
     var custop1 = document.querySelector("#p1-p-custo").value 
     var q1 = document.querySelector("#p1-p-qt").value 
-    /*var pmoedadia = document.querySelector("#p1-hora").value;/*dia*/
-    /*var pmoedasemana = document.querySelector("#p1-dia").value;/*semana*/
-    /*var pmoedames = document.querySelector("#p1-dia").value;/*mes*/
-    /*var num6 = document.querySelector("#p6-p-hora").value;*/
     
-   //calculos
-        var resultadohora = parseInt(pmoeda1) / parseInt(phora1)//72/250 
-        var resmesdia = parseInt(resultadohora) * parseInt(diahora)//h*24
-        var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)720horas
-        var resmesbruto = parseInt(q1) * parseInt(resmesmes)//((72/250)*24)*30)*("qantidade de planta")
-        var totmesplant = parseInt(meshora) / parseInt()//hora polanta/30hplanta por mes
-        var restrocaplantames = parseInt(totmesplant) * parseInt(phora1)//trocas planta no mes
-        var rescustobrutomes = parseInt(resmes) - parseInt(rescustobrutomes) //((72/250)720horas - (custo*troca)
+    
+    //calculos
+    var resultadohora = parseInt(pmoeda1) / parseInt(phora1)//72/250 3,47222
+    for var resmesdia = parseInt("#p2-p-hora") * parseInt(diahora)//h*24  83,333
+    var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)*720horas 2500
+    var resmesbruto = parseInt(q1) * parseInt(resmes)//((72/250)*24)*30)*("qantidade de planta")
+    var totmesplant = parseInt(phora1) / parseInt(meshora)//hora polanta/30hplanta por mes 10
+    var rescustobrutomes = parseInt(resmes) - parseInt(custop1) //((72/250)720horas - (custo*troca)1500
 
-
+    var plantabrutames = parseInt(rescustobrutomes)
+    var plantabrutahora = parseInt(plantabrutames)/ parseInt(meshora)
+    var plantabrutadia = parseInt(plantabrutahora) * parseInt(diahora)
+    
     
 
-    document.getElementById("p2-p-hora").value=""
+    document.getElementById("p2-p-hora").value = resultadohora
+    document.getElementById("p3-p-hora").value = resmesdia.toFixed(3)
+    document.getElementById("p4-p-hora").value = resmes
         
-        document.querySelector("#p1-hora").value = resultadohora/*hora dia*/
-        document.querySelector("#p1-dia").value = resmesdia/*hora dia*/
-        document.querySelector("#p1-semana").value = resmessem/*hora dia*/
-        document.querySelector("#p1-mes").value = resmesmescustoq/*hora dia*/
-	
+	<html>
+<body>
+<h2>JavaScript Iterables</h2>
+<p>Iterate over a Map:</p><br>
+<input type="button"onclick="varias()"><br>
+<input id="as"type="text"><br>
+<input id="bs"type="text"><br>
+<input id="cs"type="text"><br>
+<input id="demo"type="text"></p>
+
+<script>
+// Create a Map
+
+function varias() {
+var a = document.querySelector("#as").value
+var b = 24
+var b = 30
+const fruits = ([
+  [ b * a]
+])
+const fruitsb = ([
+  [ b - a]
+])
+
+var aprint = fruits
+var bprint = fruitsb
+document.getElementById("demo").value = aprint;
+document.getElementById("bs").value = bprint;
+document.getElementById("cs").value = bprint;
+}
+</script>
+</body>
+</html>
     
        /* var dia1 = document.querySelector("#p1-mes").value
         
         var resultadosemana = document.querySelector("#p1-dia").value
         var resultadosemana1 = parseInt(resultadosemana) * parseInt(semana)
         
-        
+        .replace(",", ".") // subistitui , por .
+        .toFixed(2)        // fixa as casas decimais
+
         var demorap = document.querySelector("#p1-p-hora").value;
         var despdemo1 =  parseInt(demorap) / parseInt(dia)       
         var despdemo1total = despdemo1
