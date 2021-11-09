@@ -1,49 +1,7 @@
 /*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
 //https://www.w3schools.com/css/css_positioning.asp
+//https://www.w3schools.com/js/tryit.asp?filename=tryjs_iterate_map
 
-
-function horamoeda() {
-    var diahora = 24
-    var semanadia = 7
-    var mesdia = 30
-    var meshora = 720
-    var i = document.querySelector("#p2-p-hora").value
-    var phora1 = document.querySelector("#p1-p-hora").value
-    var pmoeda1 = document.querySelector("#p1-p-moeda").value
-    var custop1 = document.querySelector("#p1-p-custo").value 
-    var q1 = document.querySelector("#p1-p-qt").value 
-    
-    
-    //calculos
-    var resultadohora = parseInt(pmoeda1) / parseInt(phora1)//72/250 3,47222
-    for var resmesdia = parseInt("#p2-p-hora") * parseInt(diahora)//h*24  83,333
-    var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)*720horas 2500
-    var resmesbruto = parseInt(q1) * parseInt(resmes)//((72/250)*24)*30)*("qantidade de planta")
-    var totmesplant = parseInt(phora1) / parseInt(meshora)//hora polanta/30hplanta por mes 10
-    var rescustobrutomes = parseInt(resmes) - parseInt(custop1) //((72/250)720horas - (custo*troca)1500
-
-    var plantabrutames = parseInt(rescustobrutomes)
-    var plantabrutahora = parseInt(plantabrutames)/ parseInt(meshora)
-    var plantabrutadia = parseInt(plantabrutahora) * parseInt(diahora)
-    
-    
-
-    document.getElementById("p2-p-hora").value = resultadohora
-    document.getElementById("p3-p-hora").value = resmesdia.toFixed(3)
-    document.getElementById("p4-p-hora").value = resmes
-        
-	<html>
-<body>
-<h2>JavaScript Iterables</h2>
-<p>Iterate over a Map:</p><br>
-<input type="button"onclick="varias()"><br>
-<input id="as"type="text"><br>
-<input id="bs"type="text"><br>
-<input id="cs"type="text"><br>
-<input id="demo"type="text"></p>
-
-<script>
-// Create a Map
 
 function varias() {
 var a = document.querySelector("#as").value
@@ -62,9 +20,53 @@ document.getElementById("demo").value = aprint;
 document.getElementById("bs").value = bprint;
 document.getElementById("cs").value = bprint;
 }
-</script>
-</body>
-</html>
+
+function horamoeda() {
+    var diahora = 24
+    var semanadia = 7
+    var mesdia = 30
+    var meshora = 720
+   
+    //var phora1 = document.querySelector("#p1-p-hora").value
+    //var pmoeda1 = document.querySelector("#p1-p-moeda").value
+    //var custop1 = document.querySelector("#p1-p-custo").value 
+    //var q1 = document.querySelector("#p1-p-qt").value 
+    //var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)*720horas 2500
+        
+    //calculos
+   
+      const resmoedahora = ([
+        [ mesdia * meshora]
+        ])
+     /* const resmesdia = ([
+        [ resmoedahora * diahora]
+        ])
+      const resmes = ([
+        [ resmoedahora * meshora]
+        ])
+*/
+    var printhm1 = resmoedahora
+       // var printhmd1 = resmesdia
+       // var printhmm1 = resmes
+         document.getElementById("p2-p-hora").value = printhm1
+          //document.getElementById("p3-p-hora").value = resmesdia
+          //document.getElementById("p4-p-hora").value = resmes
+      } 
+
+
+/* var resultadohora = parseInt(pmoeda1) / parseInt(phora1)//72/250 3,47222
+    for var resmesdia = parseInt("#p2-p-hora") * parseInt(diahora)//h*24  83,333
+    var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)*720horas 2500
+    var resmesbruto = parseInt(q1) * parseInt(resmes)//((72/250)*24)*30)*("qantidade de planta")
+    var totmesplant = parseInt(phora1) / parseInt(meshora)//hora polanta/30hplanta por mes 10
+    var rescustobrutomes = parseInt(resmes) - parseInt(custop1) //((72/250)720horas - (custo*troca)1500
+
+    var plantabrutames = parseInt(rescustobrutomes)
+    var plantabrutahora = parseInt(plantabrutames)/ parseInt(meshora)
+    var plantabrutadia = parseInt(plantabrutahora) * parseInt(diahora)
+    
+  */  
+
     
        /* var dia1 = document.querySelector("#p1-mes").value
         
@@ -82,7 +84,7 @@ document.getElementById("cs").value = bprint;
       
        /* document.querySelector("#p1-semana").value =  resultadosemana1/*hora semana*/
      
-   }
+  // }
 
 /*function horahora(){
       const diadia = 1
