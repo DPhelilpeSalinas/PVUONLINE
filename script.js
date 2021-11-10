@@ -2,57 +2,71 @@
 //https://www.w3schools.com/css/css_positioning.asp
 //https://www.w3schools.com/js/tryit.asp?filename=tryjs_iterate_map
 
-
-function varias() {
-var a = document.querySelector("#as").value
-var b = 24
-var b = 30
-const fruits = ([
-  [ b * a]
-])
-const fruitsb = ([
-  [ b - a]
-])
-
-var aprint = fruits
-var bprint = fruitsb
-document.getElementById("demo").value = aprint;
-document.getElementById("bs").value = bprint;
-document.getElementById("cs").value = bprint;
-}
-
 function horamoeda() {
+  //planta 1
     var diahora = 24
     var semanadia = 7
     var mesdia = 30
+    var semhora = 168
     var meshora = 720
-   
-    //var phora1 = document.querySelector("#p1-p-hora").value
-    //var pmoeda1 = document.querySelector("#p1-p-moeda").value
-    //var custop1 = document.querySelector("#p1-p-custo").value 
-    //var q1 = document.querySelector("#p1-p-qt").value 
-    //var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)*720horas 2500
-        
-    //calculos
-   
-      const resmoedahora = ([
-        [ mesdia * meshora]
-        ])
-     /* const resmesdia = ([
-        [ resmoedahora * diahora]
-        ])
-      const resmes = ([
-        [ resmoedahora * meshora]
-        ])
-*/
-    var printhm1 = resmoedahora
-       // var printhmd1 = resmesdia
-       // var printhmm1 = resmes
-         document.getElementById("p2-p-hora").value = printhm1
-          //document.getElementById("p3-p-hora").value = resmesdia
-          //document.getElementById("p4-p-hora").value = resmes
-      } 
 
+    var horaplanta1 = document.querySelector("#p1-p-hora").value
+    var moedaplanta1 = document.querySelector("#p1-p-moeda").value
+    var qt1 = document.querySelector("#p1-p-qt").value
+    var cs1 = document.querySelector("#p1-p-custo").value       
+    //calculos
+      //sem custo ou quantidade
+      const resmoedahora1 = ([ moedaplanta1 / horaplanta1])
+      const resmesdia1 = ([ resmoedahora1 * diahora])
+      const ressem1 = ([ resmoedahora1 * semhora])
+      const resmes1 = ([ resmoedahora1 * meshora])
+      const restroca1 = ([ meshora / horaplanta1])
+      //quantidade
+      const message = document.getElementById("erromes")
+            message.innerHTML = "" 
+            let p1qt = document.getElementById("p1-p-qt").value
+            try {
+              
+              if(isNaN(p1qt)) throw "não é um numero "
+              
+              p1qt = Number(p1qt)
+              if(p1qt < 1) throw "é menor  que 1 "
+             
+              if(p1qt > 6) throw "é maior que 6 "
+              
+            }
+            catch(err) {
+              message.innerHTML = "A informação "+ err +"precione novamente para calcular sobre 1 planta"
+              document.getElementById("p1-p-qt").value= 1 //.style=blue//+ //.style=background:red// apaga a mensangem
+            }
+          
+          const totmh1 = ([ resmoedahora1 * qt1])
+          const totd1 = ([ resmesdia1 * qt1])
+          const tots1 = ([ ressem1 * qt1])
+          const totm1 = ([ resmes1 * qt1])
+          const tottr1 = ([ restroca1 * qt1])
+          // custo
+          const custom1 = ([ totm1 - cs1])
+          const custod1 = ([ custom1 / mesdia])
+          const custos1 = ([ custod1 * semanadia])
+          const custoh1 = ([ custod1 / diahora])
+          
+
+          var printhm1 = custoh1
+          var printd1 = custod1
+          var prints1 = custos1
+          var printm1 = custom1
+          var printtr1 = tottr1
+          //var tottr1 = onclick
+           // var printhmd1 = resmesdia
+           // var printhmm1 = resmes
+             document.getElementById("p1-hora").value = printhm1
+             document.getElementById("p1-dia").value = printd1
+             document.getElementById("p1-semana").value = prints1
+             document.getElementById("p1-mes").value = printm1
+             document.getElementById("p1-troca").value = printtr1
+
+      } 
 
 /* var resultadohora = parseInt(pmoeda1) / parseInt(phora1)//72/250 3,47222
     for var resmesdia = parseInt("#p2-p-hora") * parseInt(diahora)//h*24  83,333
