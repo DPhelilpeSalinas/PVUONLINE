@@ -1,6 +1,7 @@
 /*http://embuscadocodigo.com/codigos/javascript/somar-valores-de-input.html*/
 //https://www.w3schools.com/css/css_positioning.asp
 //https://www.w3schools.com/js/tryit.asp?filename=tryjs_iterate_map
+//https://www.w3schools.com/js/js_timing.asp  tempo funções de tempo
 
 function horamoeda() {
   //planta 1
@@ -10,319 +11,300 @@ function horamoeda() {
     var semhora = 168
     var meshora = 720
 
-    var horaplanta1 = document.querySelector("#p1-p-hora").value
-    var moedaplanta1 = document.querySelector("#p1-p-moeda").value
-    var qt1 = document.querySelector("#p1-p-qt").value
-    var cs1 = document.querySelector("#p1-p-custo").value       
+    var horapp1 = document.querySelector("#p1-p-hora").value.valueOf()
+    var moedapp1 = document.querySelector("#p1-p-moeda").value.valueOf()
+    var qtp1 = document.querySelector("#p1-p-qt").value.valueOf()
+    var csp1 = document.querySelector("#p1-p-custo").value.valueOf()
     //calculos
       //sem custo ou quantidade
-      const resmoedahora1 = ([ moedaplanta1 / horaplanta1])
-      const resmesdia1 = ([ resmoedahora1 * diahora])
-      const ressem1 = ([ resmoedahora1 * semhora])
-      const resmes1 = ([ resmoedahora1 * meshora])
-      const restroca1 = ([ meshora / horaplanta1])
+      const resmoedahorap1 =  moedapp1 / horapp1
+      const resmesdiap1 =  resmoedahorap1 * diahora
+      const ressemp1 =  resmoedahorap1 * semhora
+      const resmesp1 =  resmoedahorap1 * meshora
+      const restrocap1 = meshora / horapp1
       //quantidade
-      const message = document.getElementById("erromes")
-            message.innerHTML = "" 
-            let p1qt = document.getElementById("p1-p-qt").value
+      //********************erros*************************************
+      const messagep1 = document.getElementById("erromes")
+            messagep1.innerHTML = "" 
+            let pp1qt = document.getElementById("p1-p-qt").value
             try {
               
-              if(isNaN(p1qt)) throw "não é um numero "
+              if(isNaN(pp1qt)) throw "não é um numero Planta 1"
               
-              p1qt = Number(p1qt)
-              if(p1qt < 1) throw "é menor  que 1 "
+              pp1qt = Number(pp1qt)
+              if(pp1qt < 1) throw "é menor  que 1 Planta 1"
              
-              if(p1qt > 6) throw "é maior que 6 "
-              
-            }
-            catch(err) {
-              message.innerHTML = "A informação "+ err +"precione novamente para calcular sobre 1 planta"
+              if(pp1qt > 6) throw "é maior que 6 Planta 1"
+           }
+          ////estilização ********************************************************************************
+            catch(errp1) {
+              messagep1.innerHTML = "A informação "+ errp1 +"<br>pressione novamente para calcular sobre planta 1"
               document.getElementById("p1-p-qt").value= 1 //.style=blue//+ //.style=background:red// apaga a mensangem
+              document.getElementById("p1-p-qt").style.backgroundColor="yellow"
+              document.getElementById("erromes").style.color="red"
+              setTimeout(myTimerp1, 9000);
+
+                  function myTimerp1() {
+                    
+                    document.getElementById("p1-p-qt").style.backgroundColor=""
+                    document.getElementById("erromes").style.color="white"
+                  }
             }
-          
-          const totmh1 = ([ resmoedahora1 * qt1])
-          const totd1 = ([ resmesdia1 * qt1])
-          const tots1 = ([ ressem1 * qt1])
-          const totm1 = ([ resmes1 * qt1])
-          const tottr1 = ([ restroca1 * qt1])
+          //-----------------------------hora---------------------------------------
+          /*
+          const messagep1 = document.getElementById("erromes")
+            messagep1.innerHTML = "" 
+            let pp1h = document.getElementById("p1-p-hora").value
+            try {
+              
+              if(isNaN(pp1qt)) throw "não é um numero Planta 1"
+              
+              pp1qt = Number(pp1qt)
+              if(pp1qt < 1) throw "é menor  que 1 Planta 1"
+             
+              if(pp1qt > 6) throw "é maior que 6 Planta 1"
+           }
+           ///estilização ********************************************************************************
+            catch(errp1) {
+              messagep1.innerHTML = "A informação "+ errp1 +"<br>pressione novamente para calcular sobre planta 1"
+              document.getElementById("p1-p-qt").value= 1 //.style=blue//+ //.style=background:red// apaga a mensangem
+              document.getElementById("p1-p-qt").style.backgroundColor="yellow"
+              document.getElementById("erromes").style.color="red"
+              setTimeout(myTimerp1, 9000);
+
+                  function myTimerp1() {
+                    
+                    document.getElementById("p1-p-qt").style.backgroundColor=""
+                    document.getElementById("erromes").style.color="white"
+                  }
+            }*/
+            //---------------------------------moeda------------------------------------------
+          /*
+          const messagep1 = document.getElementById("erromes")
+            messagep1.innerHTML = "" 
+            let pp1h = document.getElementById("p1-p-hora").value
+            try {
+              
+              if(isNaN(pp1qt)) throw "não é um numero Planta 1"
+              
+              pp1qt = Number(pp1qt)
+              if(pp1qt < 1) throw "é menor  que 1 Planta 1"
+             
+              if(pp1qt > 6) throw "é maior que 6 Planta 1"
+           }
+           ///estilização ********************************************************************************
+            catch(errp1) {
+              messagep1.innerHTML = "A informação "+ errp1 +"<br>pressione novamente para calcular sobre planta 1"
+              document.getElementById("p1-p-qt").value= 1 //.style=blue//+ //.style=background:red// apaga a mensangem
+              document.getElementById("p1-p-qt").style.backgroundColor="yellow"
+              document.getElementById("erromes").style.color="red"
+              setTimeout(myTimerp1, 9000);
+
+                  function myTimerp1() {
+                    
+                    document.getElementById("p1-p-qt").style.backgroundColor=""
+                    document.getElementById("erromes").style.color="white"
+                  }
+            }*/
+            //------------------------------custo---------------------------------------------------
+          /*/*
+          const messagep1 = document.getElementById("erromes")
+            messagep1.innerHTML = "" 
+            let pp1h = document.getElementById("p1-p-hora").value
+            try {
+              
+              if(isNaN(pp1qt)) throw "não é um numero Planta 1"
+              
+              pp1qt = Number(pp1qt)
+              if(pp1qt < 1) throw "é menor  que 1 Planta 1"
+             
+              if(pp1qt > 6) throw "é maior que 6 Planta 1"
+           }
+           ///estilização ********************************************************************************
+            catch(errp1) {
+              messagep1.innerHTML = "A informação "+ errp1 +"<br>pressione novamente para calcular sobre planta 1"
+              document.getElementById("p1-p-qt").value= 1 //.style=blue//+ //.style=background:red// apaga a mensangem
+              document.getElementById("p1-p-qt").style.backgroundColor="yellow"
+              document.getElementById("erromes").style.color="red"
+              setTimeout(myTimerp1, 9000);
+
+                  function myTimerp1() {
+                    
+                    document.getElementById("p1-p-qt").style.backgroundColor=""
+                    document.getElementById("erromes").style.color="white"
+                  }
+            }*/
+          const totmhp1 =  resmoedahorap1 * qtp1
+          const totdp1 =  resmesdiap1 * qtp1
+          const totsp1 =  ressemp1 * qtp1
+          const totmp1 =  resmesp1 * qtp1
+          const tottrp1 =  restrocap1 * qtp1
           // custo
-          const custom1 = ([ totm1 - cs1])
-          const custod1 = ([ custom1 / mesdia])
-          const custos1 = ([ custod1 * semanadia])
-          const custoh1 = ([ custod1 / diahora])
+          const customp1 =  totmp1 - csp1
+          const custodp1 =  customp1 / mesdia
+          const custosp1 =  custodp1 * semanadia
+          const custohp1 =  custodp1 / diahora
           
 
-          var printhm1 = custoh1
-          var printd1 = custod1
-          var prints1 = custos1
-          var printm1 = custom1
-          var printtr1 = tottr1
-          //var tottr1 = onclick
-           // var printhmd1 = resmesdia
-           // var printhmm1 = resmes
-             document.getElementById("p1-hora").value = printhm1
-             document.getElementById("p1-dia").value = printd1
-             document.getElementById("p1-semana").value = prints1
-             document.getElementById("p1-mes").value = printm1
-             document.getElementById("p1-troca").value = printtr1
+          var printhmp1 = custohp1
+          var printdp1 = custodp1
+          var printsp1 = custosp1
+          var printmp1 = customp1
+          var printtrp1 = tottrp1
+        
+             document.getElementById("p1-hora").value = printhmp1.toFixed(2).replace(".",",")
+             document.getElementById("p1-dia").value = printdp1.toFixed(2).replace(".",",")
+             document.getElementById("p1-semana").value = printsp1.toFixed(2).replace(".",",")
+             document.getElementById("p1-mes").value = printmp1.toFixed(2).replace(".",",")
+             document.getElementById("p1-troca").value = printtrp1.toFixed(0).replace(".",",")
+
+      //planta 2*********************************************************************************************************************************************
+   var horapp2 = document.querySelector("#p2-p-hora").value.valueOf()
+    var moedapp2 = document.querySelector("#p2-p-moeda").value.valueOf()
+    var qtp2 = document.querySelector("#p2-p-qt").value.valueOf()
+    var csp2 = document.querySelector("#p2-p-custo").value.valueOf()
+    //calculos
+      //sem custo ou quantidade
+      const resmoedahorap2 =  moedapp2 / horapp2
+      const resmesdiap2 =  resmoedahorap2 * diahora
+      const ressemp2 =  resmoedahorap2 * semhora
+      const resmesp2 =  resmoedahorap2 * meshora
+      const restrocap2 = meshora / horapp2
+      //quantidade
+      //********************erros*************************************
+      const messagep2 = document.getElementById("erromes")
+            //messagep2.innerHTML = "" 
+            let pp2qt = document.getElementById("p2-p-qt").value
+            //let pp2qt = document.getElementById("pp2-p-qt").style="background:red"
+            try {
+              
+              if(isNaN(pp2qt)) throw "não é um numero Planta 2"
+              
+              pp2qt = Number(pp2qt)              
+             
+              if(pp2qt > 6) throw "é maior que 6 Planta 2"
+              
+            }
+          ////estilização ********************************************************************************
+            catch(errp2) {
+              messagep2.innerHTML = "A informação "+ errp2 +"<br>pressione novamente para calcular sobre planta 2"
+             
+              document.getElementById("p2-p-qt").style.backgroundColor="yellow"
+              document.getElementById("p2-p-hora").style.backgroundColor="yellow"
+              document.getElementById("p2-p-moeda").style.backgroundColor="yellow"
+              document.getElementById("erromes").style.color="red"
+              setTimeout(myTimerp2, 9000);
+
+                  function myTimerp2() {
+                    
+                    document.getElementById("p2-p-qt").style.backgroundColor=""
+                    document.getElementById("p2-p-hora").style.backgroundColor=""
+                    document.getElementById("p2-p-moeda").style.backgroundColor=""
+                    document.getElementById("erromes").style.color="white"
+                  }
+            }
+/*
+           //+++++++++++++++++++++++++++++++++++++++++++planta hora++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                const messagep2h = document.getElementById("erromes")
+            messagep2h.innerHTML = "" 
+            let pp2hora = document.getElementById("p2-p-hora").value
+            //let pp2qt = document.getElementById("pp2-p-qt").style="background:red"
+            try {
+              
+              if(isNaN(pp2hora)) throw "não é um numero "
+              
+              pp2hora = Number(pp2hora)              
+             
+              if(pp2hora > 720) throw "é maior que 6 "
+              
+            }
+          ////estilização ********************************************************************************
+            catch(errp2h) {
+              messagep2h.innerHTML = "A informação "+ errp2h +"<br>pressione novamente para calcular sobre planta 2"
+             
+              
+              document.getElementById("p2-p-hora").style.backgroundColor="yellow"
+              
+              document.getElementById("erromes").style.color="red"
+              setTimeout(myTimerp2h, 9000);
+
+                  function myTimerp2h() {
+                    
+                    document.getElementById("p2-p-hora").style.backgroundColor="white"
+                    document.getElementById("erromes").style.color="white"
+                  }
+            }
+            //*********************************final planta hora estilização e erros****************************************************
+            //*********************************zerar calculo planta 2 quando nao usado**************************************************
+                  const messagep2u = document.getElementById("p2-p-moeda")
+            messagep2u.innerHTML = "" 
+            let pp2u = document.getElementById("p2-p-moeda").value
+            //let pp2qt = document.getElementById("pp2-p-qt").style="background:red"
+            try {
+              
+              
+              
+              pp2u = Number(pp2u)              
+             
+              if(pp2u <1) throw "é maior que 6 "
+              
+            }
+          ////estilização ********************************************************************************
+            catch(errp2u) {
+              messagep2u.innerHTML = ""
+              setTimeout(myTimerp2u, 1000);
+
+                  function myTimerp2u() {
+                    
+                    
+                    document.getElementById("p2-hora").value=""
+                    document.getElementById("p2-dia").value=""
+                    document.getElementById("p2-semana").value=""
+                    document.getElementById("p2-mes").value=""
+                    document.getElementById("p2-troca").value=""
+                    
+
+ 
+                  }
+
+                }*/
+            //*************************************final zerar calculo planta 2 quando não é usado
+          const totmhp2 =  resmoedahorap2 * qtp2
+          const totdp2 =  resmesdiap2 * qtp2
+          const totsp2 =  ressemp2 * qtp2
+          const totmp2 =  resmesp2 * qtp2
+          const tottrp2 =  restrocap2 * qtp2
+          // custo
+          const customp2 =  totmp2 - csp2
+          const custodp2 =  customp2 / mesdia
+          const custosp2 =  custodp2 * semanadia
+          const custohp2 =  custodp2 / diahora
+          
+
+          var printhmp2 = custohp2
+          var printdp2 = custodp2
+          var printsp2 = custosp2
+          var printmp2 = customp2
+          var printtrp2 = tottrp2
+        
+             document.getElementById("p2-hora").value = printhmp2.toFixed(2).replace(".",",")
+             document.getElementById("p2-dia").value = printdp2.toFixed(2).replace(".",",")
+             document.getElementById("p2-semana").value = printsp2.toFixed(2).replace(".",",")
+             document.getElementById("p2-mes").value = printmp2.toFixed(2).replace(".",",")
+             document.getElementById("p2-troca").value = printtrp2.toFixed(0).replace(".",",")
+
+//******************************************************planta 4********************************************************
+
+//******************************************************planta 5********************************************************
+
+//******************************************************planta 6********************************************************
 
       } 
 
-/* var resultadohora = parseInt(pmoeda1) / parseInt(phora1)//72/250 3,47222
-    for var resmesdia = parseInt("#p2-p-hora") * parseInt(diahora)//h*24  83,333
-    var resmes = parseInt(resultadohora) * parseInt(meshora)//((72/250)*720horas 2500
-    var resmesbruto = parseInt(q1) * parseInt(resmes)//((72/250)*24)*30)*("qantidade de planta")
-    var totmesplant = parseInt(phora1) / parseInt(meshora)//hora polanta/30hplanta por mes 10
-    var rescustobrutomes = parseInt(resmes) - parseInt(custop1) //((72/250)720horas - (custo*troca)1500
 
-    var plantabrutames = parseInt(rescustobrutomes)
-    var plantabrutahora = parseInt(plantabrutames)/ parseInt(meshora)
-    var plantabrutadia = parseInt(plantabrutahora) * parseInt(diahora)
-    
-  */  
-
-    
-       /* var dia1 = document.querySelector("#p1-mes").value
-        
-        var resultadosemana = document.querySelector("#p1-dia").value
-        var resultadosemana1 = parseInt(resultadosemana) * parseInt(semana)
-        
-        .replace(",", ".") // subistitui , por .
-        .toFixed(2)        // fixa as casas decimais
-
-        var demorap = document.querySelector("#p1-p-hora").value;
-        var despdemo1 =  parseInt(demorap) / parseInt(dia)       
-        var despdemo1total = despdemo1
-        document.querySelector("#p1-troca").value = despdemo1total
-        var mes = document.querySelector("#p1-mes").value = (((horamoeda1.replace(",", ".") *dia)*mes)*q1)- (custop1*despdemo1total)/*hora mes*/
-      
-       /* document.querySelector("#p1-semana").value =  resultadosemana1/*hora semana*/
-     
-  // }
-
-/*function horahora(){
-      const diadia = 1
-    var resultado2 = (parseInt(pmoedadia.replace(",", ".")) )
-     document.querySelector("#p1-dia").value = resultado2.toFixed(2)
-    
-    var resultado3 = 
-      parseInt(pmoedas1) * 7
-      document.querySelector("#p1-semana").value = resultado3;
-    var resultado4 = 
-      parseInt(pmoedam1) * 30
-      document.querySelector("#p1-mes").value = resultado4;}
-     /* var resultado2 =
-      parseInt(num3) 
-      parseInt(num4) +
-      parseInt(num5) +
-      parseInt(num6)
-    
-}*/
-/*
-function horamoeda2() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p2phora = document.getElementById("p2-p-hora").value
-  try {
-    
-    if(isNaN(p2phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p2phora = Number(p2phora)
-    if(p2phora < 24) throw "valor muito baixo no campo ( Hora Planta 2)"
-    
-    if(p2phora > 720) throw "valor muito alto no campo ( Hora Planta 2)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p2-p-hora").value=""
-  }
-}
-function horamoeda3() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p3phora = document.getElementById("p3-p-hora").value
-  try {
-    
-
-    if(isNaN(p3phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p3phora = Number(p3phora)
-    if(p3phora < 24) throw "valor muito baixo no campo ( Hora Planta 3)"
-    
-    if(p3phora > 720) throw "valor muito alto no campo ( Hora Planta 3)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p3-p-hora").value=""
-  }
-}
-
-function horamoeda4() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p4phora = document.getElementById("p4-p-hora").value
-  try {
-    
-    if(isNaN(p4phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p4phora = Number(p4phora)
-    if(p4phora < 24) throw "valor muito baixo no campo ( Hora Planta 4)"
-    
-    if(p4phora > 720) throw "valor muito alto no campo ( Hora Planta 4)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p4-p-hora").value=""
-  }
-}
-
-function horamoeda5() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p5phora = document.getElementById("p5-p-hora").value
-  try {
-    
-
-    if(isNaN(p5phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p5phora = Number(p5phora)
-    if(p5phora < 24) throw "valor muito baixo no campo ( Hora Planta 5)"
-    
-    if(p5phora > 720) throw "valor muito alto no campo ( Hora Planta 5)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p5-p-hora").value=""
-  }
-}
-
-function horamoeda6() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p6phora = document.getElementById("p6-p-hora").value
-  try {
-    
-
-    if(isNaN(p6phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p6phora = Number(p6phora)
-    if(p6phora < 24) throw "valor muito baixo no campo ( Hora Planta 6)"
-    
-    if(p6phora > 720) throw "valor muito alto no campo ( Hora Planta 6)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p2-p-hora").value=""
-    document.getElementById("p2-p-hora").value=""
-  }*/
 /**********************************************************************************************************/
-/*function horamoeda() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p1phora = document.getElementById("p1-p-hora").value
-  try {
-    if(p1phora == "") throw "digite quantas horas a planta leva para crescer!"
-		
-    if(isNaN(p1phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p1phora = Number(p1phora)
-    if(p1phora < 24) throw "valor muito baixo no campo ( Hora Planta 1)"
-    
-    if(p1phora > 720) throw "valor muito alto no campo ( Hora Planta 1)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p1-p-hora").value=""
-  }
-}
-function horamoeda2() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p2phora = document.getElementById("p2-p-hora").value
-  try {
-    
-    if(isNaN(p2phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p2phora = Number(p2phora)
-    if(p2phora < 24) throw "valor muito baixo no campo ( Hora Planta 2)"
-    
-    if(p2phora > 720) throw "valor muito alto no campo ( Hora Planta 2)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p2-p-hora").value=""
-  }
-}
-function horamoeda3() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p3phora = document.getElementById("p3-p-hora").value
-  try {
-    
 
-    if(isNaN(p3phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p3phora = Number(p3phora)
-    if(p3phora < 24) throw "valor muito baixo no campo ( Hora Planta 3)"
-    
-    if(p3phora > 720) throw "valor muito alto no campo ( Hora Planta 3)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p3-p-hora").value=""
-  }
-}
-
-function horamoeda4() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p4phora = document.getElementById("p4-p-hora").value
-  try {
-    
-    if(isNaN(p4phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p4phora = Number(p4phora)
-    if(p4phora < 24) throw "valor muito baixo no campo ( Hora Planta 4)"
-    
-    if(p4phora > 720) throw "valor muito alto no campo ( Hora Planta 4)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p4-p-hora").value=""
-  }
-}
-
-function horamoeda5() {
-  const message = document.getElementById("erromes")
-  message.innerHTML = ""
-  let p5phora = document.getElementById("p5-p-hora").value
-  try {
-    
-
-    if(isNaN(p5phora)) throw "não é um Número, a tabela só aceita números!"
-    
-    p5phora = Number(p5phora)
-    if(p5phora < 24) throw "valor muito baixo no campo ( Hora Planta 5)"
-    
-    if(p5phora > 720) throw "valor muito alto no campo ( Hora Planta 5)"
-    
-  }
-  catch(err) {
-    message.innerHTML = "Corriga o erro: " + err
-    document.getElementById("p5-p-hora").value=""
-  }
-}
-
-function horamoeda6() {
+function limparmes() {
   const message = document.getElementById("erromes")
   message.innerHTML = ""
   let p6phora = document.getElementById("p6-p-hora").value
@@ -341,4 +323,5 @@ function horamoeda6() {
     message.innerHTML = "Corriga o erro: " + err
     document.getElementById("p2-p-hora").value=""
     document.getElementById("p2-p-hora").value=""
-  }*/
+}
+}
