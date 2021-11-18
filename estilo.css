@@ -174,7 +174,7 @@ footer{
 		/*background: red;*/
 		}
 	#calc{
-		
+		background: black;
 		
 	}
 	#calc1{  /*texto entre botoes */
@@ -188,10 +188,10 @@ footer{
 			background-color:yellow;
 		}
 	#calcb1{/*caixa de texto e botao*/
-		/*background: blue;*/
+		background: black;
 	}
 	#calcb2{/*caixa de texto e botao*/
-		/*background: yellow;*/
+		background: black;
 	}
 	#tabela-mes-2{
 		clear:both;
@@ -231,7 +231,7 @@ footer{
 				height:250px;
 			}
 			#p0{
-				/*background: grey;*/
+				background: blackgrey;
 			}
 				#p0-p-qt{height: 0.99px;}
 				#p0-p-hora{height: 0.99px;}

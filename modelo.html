@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>PvsU-Online</title>
 		<link rel="stylesheet" href="estilo.css">
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body onload="carregar()">
 		<header>
@@ -201,8 +201,8 @@
 						<input id="p6-troca" Type="text">
 					</div>
 					<div id="p7">
-						<input id="p-qt-total" Type="text">
-						<input id="p-total" Type="text">
+						<p id="p-total"style="text-align: center">Total</p>
+						<input id="p-qt-total" Type="text" >
 						<input id="p-h-total" Type="text">
 						<input id="p-m-total" Type="text">
 						<input id="p-c-total" Type="text">
@@ -215,41 +215,42 @@
 				</div>
 				<button id="calcularmes" Type="button"  onclick="horamoeda()" >Calcular</button>
 				<button id="limpar" Type="button" name="txtano" onclick="horamoeda()">Limpar dados</button>
-				<p id="erromesqt">qt</p>
-				<p id="erromesh">h</p>
-				<p id="erromesm">m</p>
-				<p id="erromesc">c</p>
-
-				<p id="erromesqtp2">qt2</p>
-				<p id="erromeshp2">h2</p>
-				<p id="erromesmp2">m2</p>
-				<p id="erromescp2">c2</p>
-				<p id="erromesup2">u2</p>
-
+			<!--mensagem de erro pl1-->
+				<p id="erromesqt"></p>
+				<p id="erromesh"></p>
+				<p id="erromesm"></p>
+				<p id="erromesc"></p>
+			<!--mensagem de erro pl2-->
+				<p id="erromesqtp2"></p>
+				<p id="erromeshp2"></p>
+				<p id="erromesmp2"></p>
+				<p id="erromescp2"></p>
+				<p id="erromesup2"></p>
+			<!--mensagem de erro pl3-->
 				<p id="erromesqtp3">qt3</p>
 				<p id="erromeshp3">h3</p>
 				<p id="erromesmp3">m3</p>
 				<p id="erromescp3">c3</p>
 				<p id="erromesup3">u3</p>
-
+			<!--mensagem de erro pl4-->
 				<p id="erromesqtp4">qt4</p>
 				<p id="erromeshp4">h4</p>
 				<p id="erromesmp4">m4</p>
 				<p id="erromescp4">c4</p>
 				<p id="erromesup4">u4</p>
-
+			<!--mensagem de erro pl5-->
 				<p id="erromesqtp5">qt5</p>
 				<p id="erromeshp5">h5</p>
 				<p id="erromesmp5">m5</p>
 				<p id="erromescp5">c5</p>
 				<p id="erromesup5">u5</p>
-		
+			<!--mensagem de erro pl7-->
 				<p id="erromesqtp6">qt6</p>
 				<p id="erromeshp6">h6</p>
 				<p id="erromesmp6">m6</p>
 				<p id="erromescp6">c6</p>
 				<p id="erromesup6">u6</p>	
-
+			<!--mensagem de erro pl7-->
 
 
             </div>
