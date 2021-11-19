@@ -17,14 +17,16 @@ section {/*corpo do site 1*/
 	padding:15px;
 	width:900px;
 	margin:auto;
+	height:auto;
 	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.363);
 	}
 footer{
-	
+	height:auto;
 	clear: both;
 	color:white;
 	text-align:center;
 	background: black;
+	margin:0px 100px 0px 0px;
 	} 
 /*----------------------tabela cotaçoes------------------------*/
 	#menu1{/*contem as cotações*/
@@ -209,12 +211,14 @@ footer{
 			background-color:yellow;
 		}
 /*----------------------tabela mes-------------------------*/
+#tabela-mes-nome{font-size: 30px;font-weight: bold;}
 	#tabela-mes{
 		margin: 10px 0px 0px 0px;
 		/*background: blue;*/
 		width:800px;
 		color: white;
 		text-align: center;
+
 			}
 			#titulomes{
 			/*	background: pink;*/
@@ -344,21 +348,25 @@ footer{
 				#semana-total{width: 80px;text-align:right;}
 				#mes-total{width: 80px;text-align:right;}
 				#troca-total{width: 80px;text-align:right;}
-			#calcularmes{width: 800px;}
+			#calcularmes{width: 800px;margin:5px;}
 				#calcularmes:hover{
 				transition-duration: 0.4s;
 				background-color:yellow;
 				height: 30px;
+
 		}
-			#limpar-mes{width: 800px;}
-				#limpar-mes:hover{
+			#limparmes{width: 800px;margin:8px;}
+				#limparmes:hover{
 				transition-duration: 0.4s;
-				background-color:yellow;	
+				background-color:yellow;
+				height: 30px;
+
 		}
 			#erromes{
 				color: white;
 
 			}
+}
 /*----------------------footer-------
 ----------------conferido--*/
 	
