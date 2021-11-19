@@ -1705,11 +1705,6 @@ function p1() {
 				document.getElementById("hora-total").value =tpmh
 				document.getElementById("hora-total").style.fontWeight = "bold"//.style = font: bold///.style=background:red
 				}
-				
-				
-				
-						
-									
 			//moeda/dia
 				function totalplantasmd() {
 				//planta 1
@@ -1780,204 +1775,307 @@ function p1() {
 				tp4md+
 				tp5md+
 				tp6md
-				
+
 				document.getElementById("dia-total").value =tpmd
 				document.getElementById("dia-total").style.fontWeight = "bold"//.style = font: bold///.style=background:red
 				}
-					//moeda/semana/
-}
-}
-}
+				//ja corrigido para baixo
+			//moeda/semana/
+				function totalplantasms() {
+				//planta 1
+				const pl1totms = document.getElementById("p1-semana").value.replace(",",".") //onde sera avaliado
+				let planta1ms= document.getElementById("semana-total") //onde sera a resposta
 
-
-			/*function a(){
-					const messagep6m = document.getElementById("erromesmp6")									
-					//messagep6m.innerHTML = ""									
-					let pp6ma = document.getElementById("p6-p-moeda").value									
-					let pp6hqta = document.getElementById("p6-p-hora").value									
-					let pp6qta = document.getElementById("p6-p-qt").value									
-						try {								
-							if(isNaN(pp6ma)) throw "não é um numero "							
-								pp6ma = Number(pp6ma)						
-							if (pp6hqta > 0.99  & pp6ma < 1) throw " da moeda é menor que 1"							
-														
-							}
+				if (pl1totms > 0) {
+				planta1ms = pl1totms;
+				} else {
+				planta1ms  = "0";
 				}
-			*/
+				//planta 2
+				const pl2totms = document.getElementById("p2-semana").value.replace(",",".") //onde sera avaliado
+				let planta2ms = document.getElementById("semana-total") //onde sera a resposta
 
-					//-------------------------------código verificação de uso-------------------------------------										
-					/*function errosusoptotal(){										
-							const messageqtptotal = document.getElementById("erromesuptotal").innerHTML								
-							let usoptotal = document.getElementById("ptotal-p-hora").value								
-							try {								
-								if(usoptotal < 0.5) throw ""							
-							}								
-							//estilização ----------------------------------------------------------------								
-							catch(errsuoptotal) {								
-								document.getElementById("ptotal-p-hora").value// apaga a mensangem							
-								setTimeout(myTimerptotalL, 100)							
-															
-									function myTimerptotalL() {						
-															
-										document.getElementById("ptotal-hora").value=""					
-										document.getElementById("ptotal-dia").value=""					
-										document.getElementById("ptotal-semana").value=""					
-										document.getElementById("ptotal-mes").value=""					
-										document.getElementById("ptotal-troca").value=""					
-															
-										document.getElementById("ptotal-p-qt").style.backgroundColor=""					
-										document.getElementById("ptotal-p-hora").style.backgroundColor=""					
-										document.getElementById("ptotal-p-moeda").style.backgroundColor=""					
-										document.getElementById("ptotal-p-custo").style.backgroundColor=""					
-									}						
-							}								
-					}										
-					//-------------------------------quantidade--------------------------------										
-					function aerrosptotal(){										
-						const messageptotal = document.getElementById("erromesqtptotal")									
-						let pptotalqt = document.getElementById("ptotal-p-qt").value									
-						let pptotalhqt = document.getElementById("ptotal-p-hora").value									
-								try {							
-								if(isNaN(pptotalqt)) throw "não é um número"							
-								pptotalqt = Number(pptotalqt)							
-									  if(pptotalqt > 6) throw "é maior que 6"						
-									 if (pptotalhqt >= 0.9  && pptotalqt <= 0.99) throw "da quantidade esta vazio"						
-								}							
-								////estilização ---------------------------							
-								catch(errptotal) {							
-									messageptotal.innerHTML = "A quantidade "+ errptotal +"<br>pressione novamente para calcular sobre <br>(Totais)"						
-									document.getElementById("ptotal-p-qt").style.backgroundColor="yellow"						
-									document.getElementById("ptotal-p-qt").value=""						
-									document.getElementById("erromesqtptotal").style.color="red"						
-									setTimeout(myTimerptotal, 9000)						
-									setTimeout(myTimerptotalLqt, 12000)						
-									function myTimerptotal() {						
-									document.getElementById("ptotal-p-qt").style.backgroundColor=""						
-									document.getElementById("erromesqtptotal").style.color="white"						
-									}						
-									function myTimerptotalLqt() {						
-										document.getElementById("erromesqtptotal").innerHTML=""					
-									}						
-								}							
-					}										
-					//-----------------------------hora---------------------------------------										
-					function erroshoraptotal(){										
-						const messageptotalh = document.getElementById("erromeshptotal")									
-						let pptotalh = document.getElementById("ptotal-p-hora").value									
-							try {								
-								if(isNaN(pptotalh)) throw "não é um número"							
-								pptotalh = Number(pptotalh)							
-								if(pptotalh >0 & pptotalh < 1) throw "é menor que 24hrs"							
-								if(pptotalh > 720) throw " é maior que 720hrs"							
-							}								
- 							//estilização----------------------------------------------------------------------------------------								
-							catch(errptotalh) {								
-								messageptotalh.innerHTML = "O Valor "+ errptotalh +"<br>pressione novamente para calcular sobre <br>(Totais)"							
-								document.getElementById("ptotal-p-hora").value = ""// apaga a mensangem							
-								document.getElementById("ptotal-p-hora").style.backgroundColor="yellow"							
-								document.getElementById("erromeshptotal").style.color="red"							
-								setTimeout(myTimerptotalh, 9000)							
-								setTimeout(myTimerptotalhL, 12000)							
-									function myTimerptotalh() {						
-										document.getElementById("ptotal-p-hora").style.backgroundColor=""					
-										document.getElementById("erromeshptotal").style.color="white"					
-									}						
-										function myTimerptotalhL() {					
-										document.getElementById("erromeshptotal").value=""					
-									}						
-							}								
-					}										
-					//---------------------------------moeda-----------------------------------------										
-					function errosmoedaptotal(){										
-						const messageptotalm = document.getElementById("erromesmptotal")									
-						//messageptotalm.innerHTML = ""									
-						let pptotalm = document.getElementById("ptotal-p-moeda").value									
-						let pptotalhqt = document.getElementById("ptotal-p-hora").value									
-						let pptotalqt = document.getElementById("ptotal-p-qt").value									
-							try {								
-								if(isNaN(pptotalm)) throw "não é um numero "							
-									pptotalm = Number(pptotalm)						
-								if (pptotalhqt > 0.99  & pptotalm < 1) throw " da moeda é menor que 1"							
-															
-								}							
-							//estilização ----------------------------------------------------------------								
-							catch(errptotalm) {								
-								messageptotalm.innerHTML = "O valor "+ errptotalm +"<br>pressione novamente para calcular sobre<br> (Totais)"							
-								document.getElementById("ptotal-p-moeda").style.backgroundColor="yellow"							
-								document.getElementById("ptotal-p-moeda").value=""							
-								document.getElementById("erromesmptotal").style.color="red"							
-								setTimeout(myTimerptotalm, 9000)							
-								setTimeout(myTimerptotalmL, 12000)							
-								setTimeout(myTimerptotalmLL, 12)							
-								function myTimerptotalm() {							
-									document.getElementById("ptotal-p-moeda").style.backgroundColor=""						
-									document.getElementById("erromesmptotal").style.color="white"						
-									}						
-								function myTimerptotalmL() {							
-									document.getElementById("erromesmptotal").value=""						
-								}							
-								function myTimerptotalmLL() {							
-									document.getElementById("ptotal-hora").value=""						
-									document.getElementById("ptotal-dia").value=""						
-									document.getElementById("ptotal-semana").value=""						
-									document.getElementById("ptotal-mes").value=""						
-									document.getElementById("ptotal-troca").value=""						
-									}						
-							}								
-					}										
-					//------------------------------custo---------------------------------------------------										
-					function erroscustoptotal(){										
-						const messageptotalc = document.getElementById("erromescptotal")									
-						//messageptotalc.innerHTML = ""									
-						let pptotalc = document.getElementById("ptotal-p-custo").value									
-						let pptotalhc = document.getElementById("ptotal-p-hora").value									
-						let pptotalqtc = document.getElementById("ptotal-p-qt").value									
-							try {								
-								if(isNaN(pptotalc)) throw "o valor de custo, não é um numero<br>(Totais) "							
-									pptotalc = Number(pptotalc)						
-															
-								if(pptotalhc >1 & pptotalc < 1) throw "o valor de custo, <br>é menor  que 1 (Totais)"							
-							}								
-							catch(errptotalc) {								
-								messageptotalc.innerHTML = errptotalc							
-								document.getElementById("ptotal-p-custo").value= "" //.style=blue//+ //.style=background:red// apaga a mensangem							
-								document.getElementById("ptotal-p-custo").style.backgroundColor="yellow"							
-								document.getElementById("erromescptotal").style.color="red"							
-								setTimeout(myTimerptotalc, 9000)							
-															
-								function myTimerptotalc() {							
-									document.getElementById("ptotal-p-custo").style.backgroundColor=""						
-									document.getElementById("erromescptotal").style.color="white"						
-								}							
-							}								
-					}										
-			*/
+				if (pl2totms > 0) {
+				planta2ms = pl2totms
+				} else {
+				planta2ms  = "0";
+				}
+				//planta 3
+				const pl3totms = document.getElementById("p3-semana").value.replace(",",".") //onde sera avaliado
+				let planta3ms = document.getElementById("semana-total") //onde sera a resposta
 
-			//a1mensangem.innerHTML = erro
-									//document.getElementById("preencher com var ou id1").value= ""// apaga a mensangem
-									//document.getElementById("preencher com var ou id1").style.backgroundColor="yellow"
-									//document.getElementById("preencher com var ou id1").style.color="red"
-									//setTimeout(nomedaaçaoapos10microsegundos, 10)
-	
-									//function nomedaaçaoapos10microsegundos() {
-									//	document.getElementById("preencher com var ou id1").style.backgroundColor=""
-									//	document.getElementById("preencher com var ou id1").style.color="white"
-									//}
-//---------------------------------------------------------------------------------------------------/
-/*
-function limparmes() {
-	const message = document.getElementById("erromes")
-	message.innerHTML = ""
-	let p6phora = document.getElementById("p6-p-hora").value
-	try {
-	if(isNaN(p6phora)) throw "não é um Número, a tabela só aceita números!"
-	p6phora = Number(p6phora)
-	if(p6phora < 24) throw "valor muito baixo no campo ( Hora Planta 6)"
-	if(p6phora > 720) throw "valor muito alto no campo ( Hora Planta 6)"
-	}
-	catch(err) {
-	message.innerHTML = "Corriga o erro: " + err
-	document.getElementById("p2-p-hora").value=""
-	document.getElementById("p2-p-hora").value=""
-	}
-	}*/
+				if (pl3totms > 0) {
+				planta3ms = pl3totms;
+				} else {
+				planta3ms  = "0";
+				}
+				//planta 4
+				const pl4totms = document.getElementById("p4-semana").value.replace(",",".") //onde sera avaliado
+				let planta4ms = document.getElementById("semana-total") //onde sera a resposta
+
+				if (pl4totms > 0) {
+				planta4ms = pl4totms;
+				} else {
+				planta4ms  = "0";
+				}
+				//planta 5
+				const pl5totms = document.getElementById("p5-semana").value.replace(",",".") //onde sera avaliado
+				let planta5ms = document.getElementById("semana-total") //onde sera a resposta
+
+				if (pl5totms> 0) {
+				planta5ms = pl5totms;
+				} else {
+				planta5ms  = "0";
+				}
+				//planta 6
+				const pl6totms = document.getElementById("p6-semana").value.replace(",",".") //onde sera avaliado
+				let planta6ms = document.getElementById("semana-total") //onde sera a resposta
+
+				if (pl6totms > 0) {
+				planta6ms = pl6totms;
+				} else {
+				planta6ms  = "0";
+				}
+
+				var tp1ms=parseFloat(planta1ms)
+				var tp2ms=parseFloat(planta2ms)
+				var tp3ms=parseFloat(planta3ms)
+				var tp4ms=parseFloat(planta4ms)
+				var tp5ms=parseFloat(planta5ms)
+				var tp6ms=parseFloat(planta6ms)
+				var tpms =
+				tp1ms+
+				tp2ms+
+				tp3ms+
+				tp4ms+
+				tp5ms+
+				tp6ms
+
+				document.getElementById("semana-total").value =tpms
+				document.getElementById("semana-total").style.fontWeight = "bold"//.style = font: bold///.style=background:red
+				}
+			//moeda/mes
+				function totalplantasmM() {
+				//planta 1
+				const pl1totmM = document.getElementById("p1-mes").value.replace(",",".") //onde sera avaliado
+				let planta1mM= document.getElementById("mes-total") //onde sera a resposta
+
+				if (pl1totmM > 0) {
+				planta1mM = pl1totmM;
+				} else {
+				planta1mM  = "0";
+				}
+				//planta 2
+				const pl2totmM = document.getElementById("p2-mes").value.replace(",",".") //onde sera avaliado
+				let planta2mM = document.getElementById("mes-total") //onde sera a resposta
+
+				if (pl2totmM > 0) {
+				planta2mM = pl2totmM
+				} else {
+				planta2mM  = "0";
+				}
+				//planta 3
+				const pl3totmM = document.getElementById("p3-mes").value.replace(",",".") //onde sera avaliado
+				let planta3mM = document.getElementById("mes-total") //onde sera a resposta
+
+				if (pl3totmM > 0) {
+				planta3mM = pl3totmM;
+				} else {
+				planta3mM  = "0";
+				}
+				//planta 4
+				const pl4totmM = document.getElementById("p4-mes").value.replace(",",".") //onde sera avaliado
+				let planta4mM = document.getElementById("mes-total") //onde sera a resposta
+
+				if (pl4totmM > 0) {
+				planta4mM = pl4totmM;
+				} else {
+				planta4mM  = "0";
+				}
+				//planta 5
+				const pl5totmM = document.getElementById("p5-mes").value.replace(",",".") //onde sera avaliado
+				let planta5mM = document.getElementById("mes-total") //onde sera a resposta
+
+				if (pl5totmM> 0) {
+				planta5mM = pl5totmM;
+				} else {
+				planta5mM  = "0";
+				}
+				//planta 6
+				const pl6totmM = document.getElementById("p6-mes").value.replace(",",".") //onde sera avaliado
+				let planta6mM = document.getElementById("mes-total") //onde sera a resposta
+
+				if (pl6totmM > 0) {
+				planta6mM = pl6totmM;
+				} else {
+				planta6mM  = "0";
+				}
+
+				var tp1mM=parseFloat(planta1mM)
+				var tp2mM=parseFloat(planta2mM)
+				var tp3mM=parseFloat(planta3mM)
+				var tp4mM=parseFloat(planta4mM)
+				var tp5mM=parseFloat(planta5mM)
+				var tp6mM=parseFloat(planta6mM)
+				var tpmM =
+				tp1mM+
+				tp2mM+
+				tp3mM+
+				tp4mM+
+				tp5mM+
+				tp6mM
+
+				document.getElementById("mes-total").value =tpmM
+				document.getElementById("mes-total").style.fontWeight = "bold"//.style = font: bold///.style=background:red
+				}
+			//planta/troca
+				function totalplantastm() {
+				//planta 1
+				var pl1tottm = document.getElementById("p1-troca").value.replace(",",".") //onde sera avaliado
+				let planta1tm= document.getElementById("troca-total") //onde sera a resposta
+
+				if (pl1tottm > 0) {
+				planta1tm = pl1tottm;
+				} else {
+				planta1tm  = "0";
+				}
+				//planta 2
+				const pl2tottm = document.getElementById("p2-troca").value.replace(",",".") //onde sera avaliado
+				let planta2tm = document.getElementById("troca-total") //onde sera a resposta
+
+				if (pl2tottm > 0) {
+				planta2tm = pl2tottm
+				} else {
+				planta2tm  = "0";
+				}
+				//planta 3
+				const pl3tottm = document.getElementById("p3-troca").value.replace(",",".") //onde sera avaliado
+				let planta3tm = document.getElementById("troca-total") //onde sera a resposta
+
+				if (pl3tottm > 0) {
+				planta3tm = pl3tottm;
+				} else {
+				planta3tm  = "0";
+				}
+				//planta 4
+				const pl4tottm = document.getElementById("p4-troca").value.replace(",",".") //onde sera avaliado
+				let planta4tm = document.getElementById("troca-total") //onde sera a resposta
+
+				if (pl4tottm > 0) {
+				planta4tm = pl4tottm;
+				} else {
+				planta4tm  = "0";
+				}
+				//planta 5
+				const pl5tottm = document.getElementById("p5-dia").value.replace(",",".") //onde sera avaliado
+				let planta5tm = document.getElementById("dia-total") //onde sera a resposta
+
+				if (pl5tottm> 0) {
+				planta5tm = pl5tottm;
+				} else {
+				planta5tm  = "0";
+				}
+				//planta 6
+				const pl6tottm = document.getElementById("p6-troca").value.replace(",",".") //onde sera avaliado
+				let planta6tm = document.getElementById("troca-total") //onde sera a resposta
+
+				if (pl6tottm > 0) {
+				planta6tm = pl6tottm;
+				} else {
+				planta6tm  = "0";
+				}
+				var tp1tm=parseFloat(planta1tm)
+				var tp2tm=parseFloat(planta2tm)
+				var tp3tm=parseFloat(planta3tm)
+				var tp4tm=parseFloat(planta4tm)
+				var tp5tm=parseFloat(planta5tm)
+				var tp6tm=parseFloat(planta6tm)
+				var tptm =
+				tp1tm+
+				tp2tm+
+				tp3tm+
+				tp4tm+
+				tp5tm+
+				tp6tm
+
+				document.getElementById("troca-total").value =tptm
+				document.getElementById("troca-total").style.fontWeight = "bold"//.style = font: bold///.style=background:red
+				}
+}
+}
+}
+function limpardados(){
+	//quantidade
+		document.getElementById("p1-p-qt").value=""
+		document.getElementById("p2-p-qt").value=""
+		document.getElementById("p3-p-qt").value=""
+		document.getElementById("p4-p-qt").value=""
+		document.getElementById("p5-p-qt").value=""
+		document.getElementById("p6-p-qt").value=""
+	//hora
+		document.getElementById("p1-p-hora").value=""
+		document.getElementById("p2-p-hora").value=""
+		document.getElementById("p3-p-hora").value=""
+		document.getElementById("p4-p-hora").value=""
+		document.getElementById("p5-p-hora").value=""
+		document.getElementById("p6-p-hora").value=""
+	//moeda
+		document.getElementById("p1-p-moeda").value=""
+		document.getElementById("p2-p-moeda").value=""
+		document.getElementById("p3-p-moeda").value=""
+		document.getElementById("p4-p-moeda").value=""
+		document.getElementById("p5-p-moeda").value=""
+		document.getElementById("p6-p-moeda").value=""
+	//custo
+		document.getElementById("p1-p-custo").value=""
+		document.getElementById("p2-p-custo").value=""
+		document.getElementById("p3-p-custo").value=""
+		document.getElementById("p4-p-custo").value=""
+		document.getElementById("p5-p-custo").value=""
+		document.getElementById("p6-p-custo").value=""
+	//hora/moeda
+		document.getElementById("p1-hora").value=""
+		document.getElementById("p2-hora").value=""
+		document.getElementById("p3-hora").value=""
+		document.getElementById("p4-hora").value=""
+		document.getElementById("p5-hora").value=""
+		document.getElementById("p6-hora").value=""
+	//dia/moeda
+		document.getElementById("p1-dia").value=""
+		document.getElementById("p2-dia").value=""
+		document.getElementById("p3-dia").value=""
+		document.getElementById("p4-dia").value=""
+		document.getElementById("p5-dia").value=""
+		document.getElementById("p6-dia").value=""
+	//semana/moeda
+		document.getElementById("p1-semana").value=""
+		document.getElementById("p2-semana").value=""
+		document.getElementById("p3-semana").value=""
+		document.getElementById("p4-semana").value=""
+		document.getElementById("p5-semana").value=""
+		document.getElementById("p6-semana").value=""
+	//mes/moeda
+		document.getElementById("p1-mes").value=""
+		document.getElementById("p2-mes").value=""
+		document.getElementById("p3-mes").value=""
+		document.getElementById("p4-mes").value=""
+		document.getElementById("p5-mes").value=""
+		document.getElementById("p6-mes").value=""
+	//troca
+		document.getElementById("p2-troca").value=""
+		document.getElementById("p1-troca").value=""
+		document.getElementById("p3-troca").value=""
+		document.getElementById("p4-troca").value=""
+		document.getElementById("p5-troca").value=""
+		document.getElementById("p6-troca").value=""
+	//totais
+		document.getElementById("p-qt-total").value=""
+		document.getElementById("p-h-total").value=""
+		document.getElementById("p-m-total").value=""
+		document.getElementById("p-c-total").value=""
+		document.getElementById("hora-total").value=""
+		document.getElementById("dia-total").value=""
+		document.getElementById("semana-total").value=""
+		document.getElementById("mes-total").value=""
+		document.getElementById("troca-total").value=""
+}
