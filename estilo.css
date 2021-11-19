@@ -119,7 +119,6 @@ footer{
 			height:20px;
 			text-align: center;
 			/*background: green;*/
-		
 		 	}
 		 #cot-input-4:focus{/*divisao caixas de texto*/
 		 	border:3px solid #555;
@@ -127,7 +126,6 @@ footer{
 			text-align: center;	
 			/*background: grey;*/
 	 		}
- 		
 /*----------------------tabela calculadora-------------------------*/
 	#tabela-mes-1{/*tabela mes 1*/
 		float: left;
@@ -177,7 +175,6 @@ footer{
 		}
 	#calc{
 		background: black;
-		
 	}
 	#calc1{  /*texto entre botoes */
 		color:white;
@@ -218,7 +215,6 @@ footer{
 		width:800px;
 		color: white;
 		text-align: center;
-
 			}
 			#titulomes{
 			/*	background: pink;*/
@@ -353,18 +349,15 @@ footer{
 				transition-duration: 0.4s;
 				background-color:yellow;
 				height: 30px;
-
 		}
 			#limparmes{width: 800px;margin:8px;}
 				#limparmes:hover{
 				transition-duration: 0.4s;
 				background-color:yellow;
 				height: 30px;
-
 		}
 			#erromes{
 				color: white;
-
 			}
 }
 /*----------------------footer-------
