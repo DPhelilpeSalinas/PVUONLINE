@@ -1,34 +1,35 @@
-*{
-	padding: 0;
-	margin: 0;
-	}
-body {/*corpo do site*/
-	margin: 10px;
-	background:black;
-	font: normal 15pt Arial;
-	}
-header {/*cabeçhalho*/
- 	color:white;
-	text-align:center;
-	}
-section {/*corpo do site 1*/
-	background:black;
-	border-radius:10px;	
-	padding:15px;
-	width:900px;
-	margin:auto;
-	height:auto;
-	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.363);
-	}
-footer{
-	height:auto;
-	clear: both;
-	color:white;
-	text-align:center;
-	background: black;
-	margin:0px 100px 0px 0px;
-	} 
-/*----------------------tabela cotaçoes------------------------*/
+/*Configurações gerais--------------------------------------------------*/
+	*{
+		padding: 0;
+		margin: 0;
+		}
+	body {/*corpo do site*/
+		margin: 10px;
+		background:black;
+		font: normal 15pt Arial;
+		}
+	header {/*cabeçhalho*/
+	 	color:white;
+		text-align:center;
+		}
+	section {/*corpo do site 1*/
+		background:black;
+		border-radius:10px;	
+		padding:15px;
+		width:900px;
+		margin:auto;
+		height:auto;
+		box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.363);
+		}
+	footer{
+		height:auto;
+		clear: both;
+		color:white;
+		text-align:center;
+		background: black;
+		margin:0px 100px 0px 0px;
+		} 
+/*Tabela cotações-------------------------------------------------------*/
 	#menu1{/*contem as cotações*/
 		/*background: blue;*/
 		text-align: center;
@@ -36,7 +37,7 @@ footer{
 		color: white;
 		height:60px;
 		}
-		#cotacoes{/* */
+		#cotacoes{
 			/*background: red;*/
 			width: 80%;
 			height:auto;
@@ -44,7 +45,7 @@ footer{
 		    color:white;
 	 		}
 			#cot-tipo-0{/*divisao caixas de texto*/
-				margin: 0px 0px 0px 80px; /*---distancia ----*/
+				margin: 0px 0px 0px 80px; /*---distância ----*/
 				height:50px;
 				/*background: yellow;*/
 				}
@@ -58,115 +59,114 @@ footer{
 				color: white;
 				text-align: left;
 				}
-	/*----------------------------1-------------------------*/
-		#cot-caixa-1{/*divisao caixas de texto*/
+	/*1----------------------------------------------------------*/
+		#cot-caixa-1{/*divisão caixas de texto*/
 			height:70px;
 			text-align: center;
 			/*background: grey;*/
 		 	}
-		 #cot-nome-1{/*divisao caixas de texto*/
+		 #cot-nome-1{/*divisão caixas de texto*/
 			height:20px;
 			text-align: center;
 			/*background: green;*/
 		 	}
-		 #cot-input-1:focus{/*divisao caixas de texto*/
+		 #cot-input-1:focus{/*divisão caixas de texto*/
 		 	border:3px solid #555;
 			width:20px;
 			text-align: center;	
 			/*background: blue;*/
 	 		}
- 	/*---------------------------2--------------------------*/
-		#cot-caixa-2{/*divisao caixas de texto*/
+ 	/*2-----------------------------------------------------------------*/
+		#cot-caixa-2{/*divisão caixas de texto*/
 			height:70px;
 			text-align: center;
 			/*background: grey;*/
 		 	}
-		 #cot-nome-2{/*divisao caixas de texto*/
+		 #cot-nome-2{/*divisão caixas de texto*/
 			height:20px;
 			text-align: center;
 			/*background: green;*/
 		 	}
-		 #cot-input-2:focus{/*divisao caixas de texto*/
+		 #cot-input-2:focus{/*divisão caixas de texto*/
 		 	border:3px solid #555;
 			width:20px;
 			text-align: center;	
 			/*background: grey;*/
 	 		}
- 	/*-----------------------3------------------------------*/
-		#cot-caixa-3{/*divisao caixas de texto*/
+ 	/*3-----------------------------------------------------------------*/
+		#cot-caixa-3{/*divisão caixas de texto*/
 				height:70px;
 				text-align: center;
 				/*background: grey;*/
 				}
-			#cot-nome-3{/*divisao caixas de texto*/
-			height:20px;
-			text-align: center;
-			/*background: green;*/
-			}
-			#cot-input-3:focus{/*divisao caixas de texto*/
-				border:3px solid #555;
-			width:20px;
-			text-align: center;	
-			/*background: grey;*/
+			#cot-nome-3{/*divisão caixas de texto*/
+				height:20px;
+				text-align: center;
+				/*background: green;*/
 				}
- 	/*------------------------4-----------------------------*/
-		#cot-caixa-4{/*divisao caixas de texto*/
+			#cot-input-3:focus{/*divisão caixas de texto*/
+				border:3px solid #555;
+				width:20px;
+				text-align: center;	
+				/*background: grey;*/
+				}
+ 	/*4-----------------------------------------------------------------*/
+		#cot-caixa-4{/*divisão caixas de texto*/
 			height:70px;
 			text-align: center;
 			/*background: grey;*/
 		 	}
-		 #cot-nome-4{/*divisao caixas de texto*/
+		 #cot-nome-4{/*divisão caixas de texto*/
 			height:20px;
 			text-align: center;
 			/*background: green;*/
 		 	}
-		 #cot-input-4:focus{/*divisao caixas de texto*/
+		 #cot-input-4:focus{/*divisão caixas de texto*/
 		 	border:3px solid #555;
 			width:20px;
 			text-align: center;	
 			/*background: grey;*/
 	 		}
-/*----------------------tabela calculadora-------------------------*/
-	#tabela-mes-1{/*tabela mes 1*/
+/*Tabela calculadora----------------------------------------------------*/
+	#tabela-mes-1{/*tabela mês 1*/
 		float: left;
 		margin: 10px;
 		color: white;
 		/*background: blue;*/
 		width: 320px;
 		column-count:3;
-		padding: 100px 90px 0px 0px; /*----para baixo e para o lado--tabela adicionar com tabela calc----*/
+		padding: 100px 90px 0px 0px; 
 		}
 		#tab-m-le-1{/*caixa texto moeda*/
-		text-align: center;
-		/*background: red;*/
-		float: left;
-		width: 115%;
-		column-count: 2;
-
-		}
-		#tab-m-le-2{/*divisao caixas de texto*/
-		text-align: center;
-		float: right;
-		width: 5%;
-		/*background: green;*/
-		}
+			text-align: center;
+			/*background: red;*/
+			float: left;
+			width: 115%;
+			column-count: 2;
+			}
+		#tab-m-le-2{/*divisão caixas de texto*/
+			text-align: center;
+			float: right;
+			width: 5%;
+			/*background: green;*/
+			}
 		#tab-m-le-3{/*caixa de texto hora*/
-		text-align: center;
-		/*background: yellow;*/
-		}
-		#tab-m-le-4{ /*botao adicionar*/
-		text-align: center;
-		/*background: red;*/
-		}
+			text-align: center;
+			/*background: yellow;*/
+			}
+		#tab-m-le-4{ /*botão adicionar*/
+			text-align: center;
+			/*background: red;*/
+			}
 		#tab-adic{
 			width: 80px;
-		}
-		#tab-adic:hover{/*cor ao clicar botao adicionar*/
+			}
+		#tab-adic:hover{/*cor ao clicar botão adicionar*/
 			transition-duration: 0.4s;
 			background-color:yellow;
-		}
-/*----------------------tabela calculadora-------------------------*/
-	#calculadora-le-real{/*conjunto botoes calculadora*/
+			}
+/*Tabela calculadora----------------------------------------------------*/
+	#calculadora-le-real{/*conjunto botões calculadora*/
 		float: left;
 		margin: 10px;
 		padding: 30px 0px 80px 0px; 
@@ -175,49 +175,49 @@ footer{
 		}
 	#calc{
 		background: black;
-	}
-	#calc1{  /*texto entre botoes */
+		}
+	#calc1{  /*texto entre botões */
 		color:white;
 		text-align: center;
 		/*background: green;*/
 		height: 20px;
-	}
-		#calc:hover{/*cor ao clicar botao*/
+		}
+		#calc:hover{/*cor ao clicar botão*/
 			transition-duration: 0.4s;
 			background-color:yellow;
+			}
+	#calcb1{/*caixa de texto e botão*/
+		background: black;
 		}
-	#calcb1{/*caixa de texto e botao*/
+	#calcb2{/*caixa de texto e botão*/
 		background: black;
-	}
-	#calcb2{/*caixa de texto e botao*/
-		background: black;
-	}
+		}
 	#tabela-mes-2{
 		clear:both;
 		/*background: blue;*/
 		text-align: left;
-	}
-/*----------------------tabela botoes adicionar-------------------------*/
+		}
+/*Tabela botões adicionar-----------------------------------------------*/
 		#adicionarbabymama{
 			text-align: center;
-			width: 200px;  /*botoes*/
+			width: 200px;  /*botões*/
 			height:50px;
 			}
 			#adicionarbabymama:hover{
-			transition-duration: 0.4s;
-			background-color:yellow;
-		}
-/*----------------------tabela mes-------------------------*/
-#tabela-mes-nome{font-size: 30px;font-weight: bold;}
-	#tabela-mes{
-		margin: 10px 0px 0px 0px;
-		/*background: blue;*/
-		width:800px;
-		color: white;
-		text-align: center;
-			}
+				transition-duration: 0.4s;
+				background-color:yellow;
+				}
+/*Tabela mês------------------------------------------------------------*/
+		#tabela-mes-nome{font-size: 30px;font-weight: bold;}
+			#tabela-mes{
+				margin: 10px 0px 0px 0px;
+				background: black;
+				width:800px;
+				color: white;
+				text-align: center;
+				}
 			#titulomes{
-			/*	background: pink;*/
+				background: black;
 				float: left;
 				width:150px;
 				text-align: left;
@@ -225,14 +225,14 @@ footer{
 			#dadosmes{
 				margin: 0px 20px 0px 0px;
 				float: right;
-				/*background: pink;*/
+				background: black;
 				columns: 7;
 				width:630px;
 				height:250px;
-			}
+				}
 			#p0{
-				background: blackgrey;
-			}
+				background: black;
+				}
 				#p0-p-qt{height: 0.99px;}
 				#p0-p-hora{height: 0.99px;}
 				#p0-p-moeda{height: 0.99px;}
@@ -247,7 +247,7 @@ footer{
 
 				width: 85px;
 				/*background: red;*/
-			}
+				}
 				#p1-p-qt{width: 80px;text-align:right;}
 				#p1-planta{width: 80px;text-align:right;}
 				#p1-p-hora{width: 80px;text-align:right;}
@@ -261,7 +261,7 @@ footer{
 			#p2{
 				width: 85px;
 				/*background: yellow;*/
-			}
+				}
 				#p2-p-qt{width: 80px;text-align:right;}
 				#p2-planta{width: 80px;text-align:right;}
 				#p2-p-hora{width: 80px;text-align:right;}
@@ -275,7 +275,7 @@ footer{
 			#p3{
 				width: 85px;
 				/*background: green;*/
-			}
+				}
 				#p3-p-qt{width: 80px;text-align:right;}
 				#p3-planta{width: 80px;text-align:right;}
 				#p3-p-hora{width: 80px;text-align:right;}
@@ -289,7 +289,7 @@ footer{
 			#p4{
 				width: 85px;
 				/*background:grey ;*/
-			}
+				}
 				#p4-p-qt{width: 80px;text-align:right;}
 				#p4-planta{width: 80px;text-align:right;}
 				#p4-p-hora{width: 80px;text-align:right;}
@@ -303,7 +303,7 @@ footer{
 			#p5{
 				width: 85px;
 				/*background: brown;*/
-			}
+				}
 				#p5-p-qt{width: 80px;text-align:right;}
 				#p5-planta{width: 80px;text-align:right;}
 				#p5-p-hora{width: 80px;text-align:right;}
@@ -317,8 +317,8 @@ footer{
 			#p6{
 				width: 85px;
 				/*height:25px;*/
-			/*background: rgb(255, 196, 0);*/
-			}
+				/*background: rgb(255, 196, 0);*/
+				}
 				#p6-p-qt{width: 80px;text-align:right;}
 				#p6-planta{width: 80px;text-align:right;}
 				#p6-p-hora{width: 80px;text-align:right;}
@@ -333,7 +333,7 @@ footer{
 				width: 85px;
 				/*height:25px;*/
 				/*background: rgb(81, 0, 255);*/
-			}
+				}
 				#p-qt-total{width: 80px;text-align:right;}
 				#p-total{width: 80px;text-align:right;}
 				#p-h-total{width: 80px;text-align:right;}
@@ -344,22 +344,26 @@ footer{
 				#semana-total{width: 80px;text-align:right;}
 				#mes-total{width: 80px;text-align:right;}
 				#troca-total{width: 80px;text-align:right;}
-			#calcularmes{width: 800px;margin:5px;}
+/*Botões mês------------------------------------------------------------*/
+			#botoesmes{
+				clear: both;
+				background: black;
+				}
+			#calcularmes{width: 400px;margin:5px;height: 40px;}
 				#calcularmes:hover{
-				transition-duration: 0.4s;
-				background-color:yellow;
-				height: 30px;
-		}
-			#limparmes{width: 800px;margin:8px;}
+					transition-duration: 0.4s;
+					background-color:yellow;
+					height: 41px;
+					}
+			#limparmes{width: 400px;margin:8px;height: 40px;}
 				#limparmes:hover{
 				transition-duration: 0.4s;
 				background-color:yellow;
-				height: 30px;
-		}
+				height: 41px;
+				}
+			#erros{background: blue;}
 			#erromes{
 				color: white;
-			}
-}
-/*----------------------footer-------
-----------------conferido--*/
+				}
+/*conferido-------------------------------------------------------------*/
 	

@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
  <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="estilo.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
-	<body onload="carregar()">
+	<body >
 		<header>
 			<div id="linha-1"></div>
 			<div></div>
@@ -17,250 +17,253 @@
 			<h1><img src="imagens/imagem1.png"></h1>
 		</header>
 		<section>
-			<div id="menu1">
-				
-			<!-- cotações------------------------------------------------------------------------------>
-				<div  id="cotacoes"style="display:none">
-					<div id="cot-tipo-0">
-						<br>
-						<p id="cot-t-01">Moeda</p><br>
-						<p id="cot-t-02">R$</p>
-					</div>
-					<div id="cot-caixa-1">
-						
-						<div id="cot-nome-1">
-							<p>BNB</p>
+			<!--Cotações--------------------------------------------------------------------------------->
+				<div id="menu1">
+					<div  id="cotacoes"style="display:none">
+					<!--Campos--------------------------------------------------------------------------->
+						<div id="cot-tipo-0"><br>
+							<p id="cot-t-01">Moeda</p><br>
+							<p id="cot-t-02">R$</p>
 						</div>
-						<div id="cot-input-1" >
-							<input id="moeda-bnb" Type="text" name="txtano" size="10px"><br>
-							<input id="bnb-real" Type="text" name="txtano" size="10px">
+					<!--Moeda bnb------------------------------------------------------------------------>
+						<div id="cot-caixa-1">
+							<div id="cot-nome-1">
+								<p>BNB</p>
+							</div>
+							<div id="cot-input-1" >
+								<input id="moeda-bnb" Type="text" name="txtano" size="10px"><br>
+								<input id="bnb-real" Type="text" name="txtano" size="10px">
+							</div>	
 						</div>	
-					</div>	
-					<div id="cot-caixa-2">
-						<div id="cot-nome-2">
-							<p>PVU</p><br>
+					<!--Moeda pvu------------------------------------------------------------------------>
+						<div id="cot-caixa-2">
+							<div id="cot-nome-2">
+								<p>PVU</p><br>
+							</div>	
+							<div id="cot-input-2">
+								<input id="moeda-pvu" Type="text" name="txtano" size="10px"><br>
+								<input id="pvu-real" Type="text" name="txtano" size="10px">
+							</div>	
 						</div>	
-						<div id="cot-input-2">
-							<input id="moeda-pvu" Type="text" name="txtano" size="10px"><br>
-							<input id="pvu-real" Type="text" name="txtano" size="10px">
+					<!--Moeda pvp------------------------------------------------------------------------>
+						<div id="cot-caixa-3">
+							<div id="cot-nome-3">
+								<p>PVP</p><br>
+							</div>	
+							<div id="cot-input-3">
+								<input id="moeda-pvp" Type="text" name="txtano"size="10px"><br>
+								<input id="pvp-real" Type="text" name="txtano"size="10px">
+							</div>	
 						</div>	
-					</div>	
-					<div id="cot-caixa-3">
-						<div id="cot-nome-3">
-							<p>PVP</p><br>
-						</div>	
-						<div id="cot-input-3">
-							<input id="moeda-pvp" Type="text" name="txtano"size="10px"><br>
-							<input id="pvp-real" Type="text" name="txtano"size="10px">
-						</div>	
-					</div>	
-					<div id="cot-caixa-4">
-						<div id="cot-nome-4">
-							<p>DOLAR</p><br>
-						</div>
-						<div id="cot-input-4">
-							<input id="moeda-dolar" Type="text" name="txtano" size="10px"><br>
-							<input id="dolar-real" Type="text" name="txtano" size="10px">
-						</div>	
-					</div>
-				</div>
-			</div>
-			<!-- adicionar planta mes------------------------------------------------------------------------------>
-			<div id="linha-2" >
-				<div id="tabela-mes-1" style="display:none">
-					<div id="tab-m-le-1" >
-						<div>
-							<p>Le</p>
-							<input id="le" Type="text" name="txtano" min="0" size="10px">
-						</div>
-						<div id="tab-m-le-2">
-							<p>/</p>
-							<p>/</p>
+					<!--Moeda dolar---------------------------------------------------------------------->
+						<div id="cot-caixa-4">
+							<div id="cot-nome-4">
+								<p>DOLAR</p><br>
+							</div>
+							<div id="cot-input-4">
+								<input id="moeda-dolar" Type="text" name="txtano" size="10px"><br>
+								<input id="dolar-real" Type="text" name="txtano" size="10px">
+							</div>	
 						</div>
 					</div>
-					
-					<div id="tab-m-le-3">
-						<p>Hora</p>
-						<input id="hora" Type="text" name="txtano" min="0" size="10px">
+				</div>'
+			<!--Adicionar planta mês--------------------------------------------------------------------->
+				<div id="linha-2" >
+					<div id="tabela-mes-1" style="display:none">
+						<div id="tab-m-le-1" >
+							<div>
+								<p>Le</p>
+								<input id="le" Type="text" name="txtano" min="0" size="10px">
+							</div>
+							<div id="tab-m-le-2">
+								<p>/</p>
+								<p>/</p>
+							</div>
+						</div>
+						<div id="tab-m-le-3">
+							<p>Hora</p>
+							<input id="hora" Type="text" name="txtano" min="0" size="10px">
+						</div>
+						<div id="tab-m-le-4">
+							<button id="tab-adic">Adicionar</button>
+						</div>
 					</div>
-					<div id="tab-m-le-4">
-						<button id="tab-adic">Adicionar</button>
-					</div>
-				</div>
-			<!-- calculadora------------------------------------------------------------------------------>	
-				<!--https://www.w3schools.com/css/css_positioning.asp-->
-				<div id="calculadora-le-real" style="display:none">
-					<div id="calcb1">
-						<button id="calc" Type="text" name="txtano" min="0"size="30">Le</button>
-						<input id="le-real" Type="text" name="txtano" min="0"size="10"><br>
-					</div>
-					<div id="calc1">
-						<p>X</p><br>
-					</div>
-					<div id="calcb2">
-						<button id="calc" Type="text" name="txtano" min="0"size="30">Real</button>
-						<input id="real-le" Type="text" name="txtano" min="0"size="10">				
-					</div>
-				</div>
-			</div>
-			<!-- adicionar plantas padrao------------------------------------------------------------------------------>
-			<div id="tabela-mes-2">
-				<button id="adicionarbabymama" style="display:none" Type="text" name="txtano">mama</button>
-				<button id="adicionarbabymama" style="display:none" Type="text" name="txtano">Baby</button>
-			</div>
-			
-			<!-- tabela mes------------------------------------------------------------------------------>
-			<div id="tabela-mes">
-				<p id="tabela-mes-nome">Calculo Mês</p><br>
-				<br>
-				<div id="titulomes">
-					<div id="p0">
-						<p id="p0-planta" >Plantas</p><br>
-						<p id="p0-p-qt">Planta/Q</p><br>
-						<p id="p0-p-hora">Planta/Hora</p><br>
-						<p id="p0-p-moeda" >Planta/Moeda</p><br>
-						<p id="p0-p-custo" >Planta/Custos</p><br>
-						<p id="p0-hora">Moeda/Hora</p><br>
-						<p id="p0-dia">Moeda/Dia</p><br>
-						<p id="p0-semana">Moeda/Semana</p><br>
-						<p id="p0-mes">Moeda/Mês</p><br>
-						<p id="p0-troca">troca/Mês</p><br>
+				<!--Calculadora-------------------------------------------------------------------------->
+					<div id="calculadora-le-real" style="display:none">
+						<div id="calcb1">
+							<button id="calc" Type="text" name="txtano" min="0"size="30">Le</button>
+							<input id="le-real" Type="text" name="txtano" min="0"size="10"><br>
+						</div>
+						<div id="calc1">
+							<p>X</p><br>
+						</div>
+						<div id="calcb2">
+							<button id="calc" Type="text" name="txtano" min="0"size="30">Real</button>
+							<input id="real-le" Type="text" name="txtano" min="0"size="10">				
+						</div>
 					</div>
 				</div>
-				<div id="dadosmes">
-					<div id="p1">
-						<p id="p1-planta">Planta 1</p>
-						<input id="p1-p-qt" Type="text">
-						<input id="p1-p-hora" Type="text">
-						<input id="p1-p-moeda" Type="text">
-						<input id="p1-p-custo" Type="text">
-						<input id="p1-hora" Type="text">
-						<input id="p1-dia" Type="text">
-						<input id="p1-semana" Type="text">
-						<input id="p1-mes" Type="text">
-						<input id="p1-troca" Type="text">
+			<!--Adicionar plantas padrão----------------------------------------------------------------->
+				<div id="tabela-mes-2">
+					<button id="adicionarbabymama" style="display:none" Type="text" name="txtano">mama</button>
+					<button id="adicionarbabymama" style="display:none" Type="text" name="txtano">Baby</button>
+				</div>
+			<!--Tabela mês------------------------------------------------------------------------------->
+				<div id="tabela-mes">
+					<p id="tabela-mes-nome">Calculo Mês</p><br>
+					<br>
+					<div id="titulomes">
+						<div id="p0">
+							<p id="p0-planta" >Plantas</p><br>
+							<p id="p0-p-qt">Planta/Q</p><br>
+							<p id="p0-p-hora">Planta/Hora</p><br>
+							<p id="p0-p-moeda" >Planta/Moeda</p><br>
+							<p id="p0-p-custo" >Planta/Custos</p><br>
+							<p id="p0-hora">Moeda/Hora</p><br>
+							<p id="p0-dia">Moeda/Dia</p><br>
+							<p id="p0-semana">Moeda/Semana</p><br>
+							<p id="p0-mes">Moeda/Mês</p><br>
+							<p id="p0-troca">troca/Mês</p><br>
+						</div>
 					</div>
-					<div id="p2">
-						<p id="p2-planta">Planta 2</p>
-						<input id="p2-p-qt" Type="text">
-						<input id="p2-p-hora" Type="text">
-						<input id="p2-p-moeda" Type="text">
-						<input id="p2-p-custo" Type="text">
-						<input id="p2-hora" Type="text">
-						<input id="p2-dia" Type="text">
-						<input id="p2-semana" Type="text">
-						<input id="p2-mes" Type="text">
-						<input id="p2-troca" Type="text">
-					</div>
-					<div id="p3">
-						<p id="p3-planta">Planta 3</p>
-						<input id="p3-p-qt" Type="text">
-						<input id="p3-p-hora" Type="text">
-						<input id="p3-p-moeda" Type="text">
-						<input id="p3-p-custo" Type="text">
-						<input id="p3-hora" Type="text">
-						<input id="p3-dia" Type="text">
-						<input id="p3-semana" Type="text">
-						<input id="p3-mes" Type="text">
-						<input id="p3-troca" Type="text">
-					</div>
-					<div id="p4">
-						<p id="p4-planta">Planta 4</p>
-						<input id="p4-p-qt" Type="text">
-						<input id="p4-p-hora" Type="text">
-						<input id="p4-p-moeda" Type="text">
-						<input id="p4-p-custo" Type="text">
-						<input id="p4-hora" Type="text">
-						<input id="p4-dia" Type="text">
-						<input id="p4-semana" Type="text">
-						<input id="p4-mes" Type="text">
-						<input id="p4-troca" Type="text">
-					</div>
-					<div id="p5">
-						<p id="p5-planta">Planta 5</p>
-						<input id="p5-p-qt" Type="text">
-						<input id="p5-p-hora" Type="text">
-						<input id="p5-p-moeda" Type="text">
-						<input id="p5-p-custo" Type="text">
-						<input id="p5-hora" Type="text">
-						<input id="p5-dia" Type="text">
-						<input id="p5-semana" Type="text">
-						<input id="p5-mes" Type="text">
-						<input id="p5-troca" Type="text">
-					</div>
-					<div id="p6">
-						<p id="p6-planta">Planta 6</p>
-						<input id="p6-p-qt" Type="text">
-						<input id="p6-p-hora" Type="text">
-						<input id="p6-p-moeda" Type="text">
-						<input id="p6-p-custo" Type="text">
-						<input id="p6-hora" Type="text">
-						<input id="p6-dia" Type="text">
-						<input id="p6-semana" Type="text">
-						<input id="p6-mes" Type="text">
-						<input id="p6-troca" Type="text">
-					</div>
-					<div id="p7">
-						<p id="p-total"style="text-align: center">Total</p>
-						<input id="p-qt-total" Type="text" >
-						<input id="p-h-total" Type="text">
-						<input id="p-m-total" Type="text">
-						<input id="p-c-total" Type="text">
-						<input id="hora-total" Type="text">
-						<input id="dia-total" Type="text">
-						<input id="semana-total" Type="text">
-						<input id="mes-total" Type="text">
-						<input id="troca-total" Type="text">
+					<div id="dadosmes">
+						<div id="p1">
+							<p id="p1-planta">Planta 1</p>
+							<input id="p1-p-qt" Type="text">
+							<input id="p1-p-hora" Type="text">
+							<input id="p1-p-moeda" Type="text">
+							<input id="p1-p-custo" Type="text">
+							<input id="p1-hora" Type="text">
+							<input id="p1-dia" Type="text">
+							<input id="p1-semana" Type="text">
+							<input id="p1-mes" Type="text">
+							<input id="p1-troca" Type="text">
+						</div>
+						<div id="p2">
+							<p id="p2-planta">Planta 2</p>
+							<input id="p2-p-qt" Type="text">
+							<input id="p2-p-hora" Type="text">
+							<input id="p2-p-moeda" Type="text">
+							<input id="p2-p-custo" Type="text">
+							<input id="p2-hora" Type="text">
+							<input id="p2-dia" Type="text">
+							<input id="p2-semana" Type="text">
+							<input id="p2-mes" Type="text">
+							<input id="p2-troca" Type="text">
+						</div>
+						<div id="p3">
+							<p id="p3-planta">Planta 3</p>
+							<input id="p3-p-qt" Type="text">
+							<input id="p3-p-hora" Type="text">
+							<input id="p3-p-moeda" Type="text">
+							<input id="p3-p-custo" Type="text">
+							<input id="p3-hora" Type="text">
+							<input id="p3-dia" Type="text">
+							<input id="p3-semana" Type="text">
+							<input id="p3-mes" Type="text">
+							<input id="p3-troca" Type="text">
+						</div>
+						<div id="p4">
+							<p id="p4-planta">Planta 4</p>
+							<input id="p4-p-qt" Type="text">
+							<input id="p4-p-hora" Type="text">
+							<input id="p4-p-moeda" Type="text">
+							<input id="p4-p-custo" Type="text">
+							<input id="p4-hora" Type="text">
+							<input id="p4-dia" Type="text">
+							<input id="p4-semana" Type="text">
+							<input id="p4-mes" Type="text">
+							<input id="p4-troca" Type="text">
+						</div>
+						<div id="p5">
+							<p id="p5-planta">Planta 5</p>
+							<input id="p5-p-qt" Type="text">
+							<input id="p5-p-hora" Type="text">
+							<input id="p5-p-moeda" Type="text">
+							<input id="p5-p-custo" Type="text">
+							<input id="p5-hora" Type="text">
+							<input id="p5-dia" Type="text">
+							<input id="p5-semana" Type="text">
+							<input id="p5-mes" Type="text">
+							<input id="p5-troca" Type="text">
+						</div>
+						<div id="p6">
+							<p id="p6-planta">Planta 6</p>
+							<input id="p6-p-qt" Type="text">
+							<input id="p6-p-hora" Type="text">
+							<input id="p6-p-moeda" Type="text">
+							<input id="p6-p-custo" Type="text">
+							<input id="p6-hora" Type="text">
+							<input id="p6-dia" Type="text">
+							<input id="p6-semana" Type="text">
+							<input id="p6-mes" Type="text">
+							<input id="p6-troca" Type="text">
+						</div>
+						<div id="p7">
+							<p id="p-total"style="text-align: center">Total</p>
+							<input id="p-qt-total" Type="text" >
+							<input id="p-h-total" Type="text">
+							<input id="p-m-total" Type="text">
+							<input id="p-c-total" Type="text">
+							<input id="hora-total" Type="text">
+							<input id="dia-total" Type="text">
+							<input id="semana-total" Type="text">
+							<input id="mes-total" Type="text">
+							<input id="troca-total" Type="text">
+						</div>
 					</div>
 				</div>
-				<button id="calcularmes" Type="button"  onclick="horamoeda()" >Calcular</button>
-				<button id="limparmes" Type="button" onclick="limpardados()">Limpar dados</button>
-			<!--mensagem de erro pl1-->
-				<p id="erromesqt"></p>
-				<p id="erromesh"></p>
-				<p id="erromesm"></p>
-				<p id="erromesc"></p>
-			<!--mensagem de erro pl2-->
-				<p id="erromesqtp2"></p>
-				<p id="erromeshp2"></p>
-				<p id="erromesmp2"></p>
-				<p id="erromescp2"></p>
-				<p id="erromesup2"></p>
-			<!--mensagem de erro pl3-->
-				<p id="erromesqtp3"></p>
-				<p id="erromeshp3"></p>
-				<p id="erromesmp3"></p>
-				<p id="erromescp3"></p>
-				<p id="erromesup3"></p>
-			<!--mensagem de erro pl4-->
-				<p id="erromesqtp4"></p>
-				<p id="erromeshp4"></p>
-				<p id="erromesmp4"></p>
-				<p id="erromescp4"></p>
-				<p id="erromesup4"></p>
-			<!--mensagem de erro pl5-->
-				<p id="erromesqtp5"></p>
-				<p id="erromeshp5"></p>
-				<p id="erromesmp5"></p>
-				<p id="erromescp5"></p>
-				<p id="erromesup5"></p>
-			<!--mensagem de erro pl7-->
-				<p id="erromesqtp6"></p>
-				<p id="erromeshp6"></p>
-				<p id="erromesmp6"></p>
-				<p id="erromescp6"></p>
-				<p id="erromesup6"></p>	
-			<!--mensagem de erro pl7-->
-
-
-            </div>
-			</div>
+			<!--Botõs tabela mês------------------------------------------------------------------------->
+				<div id="botoesmes">
+					<button id="calcularmes" Type="button"  onclick="horamoeda()" >Calcular</button>
+					<button id="limparmes" Type="button" onclick="limpardados()">Limpar dados</button>
+				</div>
+			<!--Erros------------------------------------------------------------------------------------>
+				<div id="erros">
+					<!--Mensagem de erro pl1------------------------------------------------------------->
+						<p id="erromesqt"></p>
+						<p id="erromesh"></p>
+						<p id="erromesm"></p>
+						<p id="erromesc"></p>
+					<!--Mensagem de erro pl2------------------------------------------------------------->
+						<p id="erromesqtp2"></p>
+						<p id="erromeshp2"></p>
+						<p id="erromesmp2"></p>
+						<p id="erromescp2"></p>
+						<p id="erromesup2"></p>
+					<!--Mensagem de erro pl3------------------------------------------------------------->
+						<p id="erromesqtp3"></p>
+						<p id="erromeshp3"></p>
+						<p id="erromesmp3"></p>
+						<p id="erromescp3"></p>
+						<p id="erromesup3"></p>
+					<!--Mensagem de erro pl4------------------------------------------------------------->
+						<p id="erromesqtp4"></p>
+						<p id="erromeshp4"></p>
+						<p id="erromesmp4"></p>
+						<p id="erromescp4"></p>
+						<p id="erromesup4"></p>
+					<!--Mensagem de erro pl5------------------------------------------------------------->
+						<p id="erromesqtp5"></p>
+						<p id="erromeshp5"></p>
+						<p id="erromesmp5"></p>
+						<p id="erromescp5"></p>
+						<p id="erromesup5"></p>
+					<!--Mensagem de erro pl7------------------------------------------------------------->
+						<p id="erromesqtp6"></p>
+						<p id="erromeshp6"></p>
+						<p id="erromesmp6"></p>
+						<p id="erromescp6"></p>
+						<p id="erromesup6"></p>	
+					<!--Mensagem de erro pl7------------------------------------------------------------->
+				</div>
 		</section>
 		<footer>
 			<p>&copy; PhC.Soluções</p>
+			<p>Contribuia e ajude o site</p>
+			<p>asdfsadfasdfasdfasdfasdfa</p>
 		</footer>
-		</body>
+	</body>
 		<script src="script.js">
 		</script>
-	
- </html>
+</html>
